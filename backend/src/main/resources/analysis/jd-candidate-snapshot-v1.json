@@ -1,0 +1,3604 @@
+{
+  "schemaVersion" : "1.0.0",
+  "entries" : [ {
+    "alias" : "tool calling",
+    "canonical" : "Tool Calling",
+    "exactCanonical" : true
+  }, {
+    "alias" : "api设计",
+    "canonical" : "API设计",
+    "exactCanonical" : true
+  }, {
+    "alias" : "autogen",
+    "canonical" : "AutoGen",
+    "exactCanonical" : true
+  }, {
+    "alias" : "golang",
+    "canonical" : "Golang",
+    "exactCanonical" : true
+  }, {
+    "alias" : "scala",
+    "canonical" : "Scala",
+    "exactCanonical" : true
+  }, {
+    "alias" : "text generation inference",
+    "canonical" : "Text Generation Inference",
+    "exactCanonical" : true
+  }, {
+    "alias" : "javascript/typescript",
+    "canonical" : "JavaScript",
+    "exactCanonical" : false
+  }, {
+    "alias" : "javascript/typescript",
+    "canonical" : "TypeScript",
+    "exactCanonical" : false
+  }, {
+    "alias" : "spring cloud alibaba",
+    "canonical" : "Spring Cloud Alibaba",
+    "exactCanonical" : true
+  }, {
+    "alias" : "large language model",
+    "canonical" : "LLM",
+    "exactCanonical" : false
+  }, {
+    "alias" : "tensorflow serving",
+    "canonical" : "TensorFlow Serving",
+    "exactCanonical" : true
+  }, {
+    "alias" : "prompt engineering",
+    "canonical" : "Prompt Engineering",
+    "exactCanonical" : true
+  }, {
+    "alias" : "prompt engineering",
+    "canonical" : "Prompt Engineering",
+    "exactCanonical" : true
+  }, {
+    "alias" : "clean architecture",
+    "canonical" : "Clean Architecture",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vision transformer",
+    "canonical" : "Vision Transformer",
+    "exactCanonical" : true
+  }, {
+    "alias" : "javascript/node.js",
+    "canonical" : "Node.js",
+    "exactCanonical" : false
+  }, {
+    "alias" : "javascript/node.js",
+    "canonical" : "JavaScript",
+    "exactCanonical" : false
+  }, {
+    "alias" : "prompt engineering",
+    "canonical" : "Prompt Engineering",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jenkins/git ci/cd",
+    "canonical" : "Git",
+    "exactCanonical" : false
+  }, {
+    "alias" : "jenkins/git ci/cd",
+    "canonical" : "CI/CD",
+    "exactCanonical" : false
+  }, {
+    "alias" : "jenkins/git ci/cd",
+    "canonical" : "Jenkins",
+    "exactCanonical" : false
+  }, {
+    "alias" : "spring framework",
+    "canonical" : "Spring",
+    "exactCanonical" : false
+  }, {
+    "alias" : "microsoft access",
+    "canonical" : "Microsoft Access",
+    "exactCanonical" : true
+  }, {
+    "alias" : "create react app",
+    "canonical" : "Create React App",
+    "exactCanonical" : true
+  }, {
+    "alias" : "active directory",
+    "canonical" : "Active Directory",
+    "exactCanonical" : true
+  }, {
+    "alias" : "stable diffusion",
+    "canonical" : "Stable Diffusion",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tanstack virtual",
+    "canonical" : "TanStack Virtual",
+    "exactCanonical" : true
+  }, {
+    "alias" : "function calling",
+    "canonical" : "Function Calling",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rockchip rk3566",
+    "canonical" : "Rockchip RK3566",
+    "exactCanonical" : true
+  }, {
+    "alias" : "google maps api",
+    "canonical" : "Google Maps API",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spring data jpa",
+    "canonical" : "Spring Data JPA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "android studio",
+    "canonical" : "Android",
+    "exactCanonical" : false
+  }, {
+    "alias" : "apache iceberg",
+    "canonical" : "Apache Iceberg",
+    "exactCanonical" : true
+  }, {
+    "alias" : "windows socket",
+    "canonical" : "Windows Socket",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tanstack query",
+    "canonical" : "TanStack Query",
+    "exactCanonical" : true
+  }, {
+    "alias" : "llm-as-a-judge",
+    "canonical" : "LLM-as-a-Judge",
+    "exactCanonical" : true
+  }, {
+    "alias" : "github actions",
+    "canonical" : "GitHub Actions",
+    "exactCanonical" : true
+  }, {
+    "alias" : "windows server",
+    "canonical" : "Windows Server",
+    "exactCanonical" : true
+  }, {
+    "alias" : "transformer 微调",
+    "canonical" : "Transformer",
+    "exactCanonical" : false
+  }, {
+    "alias" : "transformer 微调",
+    "canonical" : "微调",
+    "exactCanonical" : false
+  }, {
+    "alias" : "android studio",
+    "canonical" : "Android",
+    "exactCanonical" : false
+  }, {
+    "alias" : "advanced excel",
+    "canonical" : "Excel",
+    "exactCanonical" : false
+  }, {
+    "alias" : "jitter buffer",
+    "canonical" : "JitterBuffer",
+    "exactCanonical" : false
+  }, {
+    "alias" : "elasticsearch",
+    "canonical" : "Elasticsearch",
+    "exactCanonical" : true
+  }, {
+    "alias" : "elasticsearch",
+    "canonical" : "Elasticsearch",
+    "exactCanonical" : false
+  }, {
+    "alias" : "redis cluster",
+    "canonical" : "Redis Cluster",
+    "exactCanonical" : true
+  }, {
+    "alias" : "elasticsearch",
+    "canonical" : "Elasticsearch",
+    "exactCanonical" : true
+  }, {
+    "alias" : "fusioninsight",
+    "canonical" : "FusionInsight",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ruby on rails",
+    "canonical" : "Ruby on Rails",
+    "exactCanonical" : true
+  }, {
+    "alias" : "elasticsearch",
+    "canonical" : "Elasticsearch",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vercel ai sdk",
+    "canonical" : "Vercel AI SDK",
+    "exactCanonical" : true
+  }, {
+    "alias" : "llama-factory",
+    "canonical" : "LLaMA-Factory",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tiny imagenet",
+    "canonical" : "Tiny ImageNet",
+    "exactCanonical" : true
+  }, {
+    "alias" : "redux toolkit",
+    "canonical" : "Redux Toolkit",
+    "exactCanonical" : true
+  }, {
+    "alias" : "unreal engine",
+    "canonical" : "Unreal Engine",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jitterbuffer",
+    "canonical" : "JitterBuffer",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mybatis-plus",
+    "canonical" : "MyBatis",
+    "exactCanonical" : false
+  }, {
+    "alias" : "mysql binlog",
+    "canonical" : "Binlog",
+    "exactCanonical" : false
+  }, {
+    "alias" : "apache dubbo",
+    "canonical" : "Dubbo",
+    "exactCanonical" : false
+  }, {
+    "alias" : "avfoundation",
+    "canonical" : "AVFoundation",
+    "exactCanonical" : true
+  }, {
+    "alias" : "videotoolbox",
+    "canonical" : "VideoToolbox",
+    "exactCanonical" : true
+  }, {
+    "alias" : "data catalog",
+    "canonical" : "Data Catalog",
+    "exactCanonical" : true
+  }, {
+    "alias" : "layoutparser",
+    "canonical" : "LayoutParser",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mybatis plus",
+    "canonical" : "MyBatis Plus",
+    "exactCanonical" : true
+  }, {
+    "alias" : "element plus",
+    "canonical" : "Element Plus",
+    "exactCanonical" : true
+  }, {
+    "alias" : "service mesh",
+    "canonical" : "Service Mesh",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spring cloud",
+    "canonical" : "Spring Cloud",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mybatis-plus",
+    "canonical" : "MyBatis-Plus",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hugging face",
+    "canonical" : "Hugging Face",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jitterbuffer",
+    "canonical" : "JitterBuffer",
+    "exactCanonical" : true
+  }, {
+    "alias" : "element plus",
+    "canonical" : "Element Plus",
+    "exactCanonical" : true
+  }, {
+    "alias" : "react router",
+    "canonical" : "React Router",
+    "exactCanonical" : true
+  }, {
+    "alias" : "avfoundation",
+    "canonical" : "AVFoundation",
+    "exactCanonical" : true
+  }, {
+    "alias" : "raspberry pi",
+    "canonical" : "Raspberry Pi",
+    "exactCanonical" : true
+  }, {
+    "alias" : "localstorage",
+    "canonical" : "LocalStorage",
+    "exactCanonical" : true
+  }, {
+    "alias" : "processingjs",
+    "canonical" : "ProcessingJS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "scikit-learn",
+    "canonical" : "Scikit-learn",
+    "exactCanonical" : true
+  }, {
+    "alias" : "google cloud",
+    "canonical" : "Google Cloud",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tailwind css",
+    "canonical" : "Tailwind CSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "transformers",
+    "canonical" : "Transformers",
+    "exactCanonical" : true
+  }, {
+    "alias" : "videotoolbox",
+    "canonical" : "VideoToolbox",
+    "exactCanonical" : true
+  }, {
+    "alias" : "flutter/dart",
+    "canonical" : "Flutter",
+    "exactCanonical" : false
+  }, {
+    "alias" : "flutter/dart",
+    "canonical" : "Dart",
+    "exactCanonical" : false
+  }, {
+    "alias" : "scikit-learn",
+    "canonical" : "Scikit-learn",
+    "exactCanonical" : false
+  }, {
+    "alias" : "android 应用基础",
+    "canonical" : "Android",
+    "exactCanonical" : false
+  }, {
+    "alias" : "deepseek sse",
+    "canonical" : "SSE",
+    "exactCanonical" : false
+  }, {
+    "alias" : "spring cloud",
+    "canonical" : "Spring Cloud",
+    "exactCanonical" : true
+  }, {
+    "alias" : "objective-c",
+    "canonical" : "Objective-C",
+    "exactCanonical" : true
+  }, {
+    "alias" : "objective c",
+    "canonical" : "Objective-C",
+    "exactCanonical" : false
+  }, {
+    "alias" : "transformer",
+    "canonical" : "Transformer",
+    "exactCanonical" : true
+  }, {
+    "alias" : "restful api",
+    "canonical" : "REST API",
+    "exactCanonical" : false
+  }, {
+    "alias" : "spring boot",
+    "canonical" : "Spring Boot",
+    "exactCanonical" : true
+  }, {
+    "alias" : "transformer",
+    "canonical" : "Transformer",
+    "exactCanonical" : true
+  }, {
+    "alias" : "shopify api",
+    "canonical" : "Shopify API",
+    "exactCanonical" : true
+  }, {
+    "alias" : "objective-c",
+    "canonical" : "Objective-C",
+    "exactCanonical" : true
+  }, {
+    "alias" : "claude code",
+    "canonical" : "Claude Code",
+    "exactCanonical" : true
+  }, {
+    "alias" : "factory i/o",
+    "canonical" : "Factory I/O",
+    "exactCanonical" : true
+  }, {
+    "alias" : "apache tika",
+    "canonical" : "Apache Tika",
+    "exactCanonical" : true
+  }, {
+    "alias" : "api gateway",
+    "canonical" : "API Gateway",
+    "exactCanonical" : true
+  }, {
+    "alias" : "power query",
+    "canonical" : "Power Query",
+    "exactCanonical" : true
+  }, {
+    "alias" : "flutterflow",
+    "canonical" : "FlutterFlow",
+    "exactCanonical" : true
+  }, {
+    "alias" : "codeigniter",
+    "canonical" : "CodeIgniter",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ios runtime",
+    "canonical" : "iOS Runtime",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spring boot",
+    "canonical" : "Spring Boot",
+    "exactCanonical" : true
+  }, {
+    "alias" : "restful api",
+    "canonical" : "REST API",
+    "exactCanonical" : false
+  }, {
+    "alias" : "agile/scrum",
+    "canonical" : "Scrum",
+    "exactCanonical" : false
+  }, {
+    "alias" : "agile/scrum",
+    "canonical" : "Agile",
+    "exactCanonical" : false
+  }, {
+    "alias" : "采购知识库 agent",
+    "canonical" : "AI Agent",
+    "exactCanonical" : false
+  }, {
+    "alias" : "spring boot",
+    "canonical" : "Spring Boot",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spring-boot",
+    "canonical" : "Spring Boot",
+    "exactCanonical" : false
+  }, {
+    "alias" : "springcloud",
+    "canonical" : "Spring Cloud",
+    "exactCanonical" : false
+  }, {
+    "alias" : "jsp/servlet",
+    "canonical" : "JSP/Servlet",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spring mvc",
+    "canonical" : "Spring MVC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "typescript",
+    "canonical" : "TypeScript",
+    "exactCanonical" : true
+  }, {
+    "alias" : "javascript",
+    "canonical" : "JavaScript",
+    "exactCanonical" : true
+  }, {
+    "alias" : "core media",
+    "canonical" : "CoreMedia",
+    "exactCanonical" : false
+  }, {
+    "alias" : "kubernetes",
+    "canonical" : "Kubernetes",
+    "exactCanonical" : true
+  }, {
+    "alias" : "javascript",
+    "canonical" : "JavaScript",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vue router",
+    "canonical" : "Vue Router",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tensorflow",
+    "canonical" : "TensorFlow",
+    "exactCanonical" : true
+  }, {
+    "alias" : "llamaindex",
+    "canonical" : "LlamaIndex",
+    "exactCanonical" : true
+  }, {
+    "alias" : "aws aurora",
+    "canonical" : "AWS Aurora",
+    "exactCanonical" : true
+  }, {
+    "alias" : "delta lake",
+    "canonical" : "Delta Lake",
+    "exactCanonical" : true
+  }, {
+    "alias" : "maxcompute",
+    "canonical" : "MaxCompute",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sql server",
+    "canonical" : "SQL Server",
+    "exactCanonical" : true
+  }, {
+    "alias" : "serverless",
+    "canonical" : "Serverless",
+    "exactCanonical" : true
+  }, {
+    "alias" : "typescript",
+    "canonical" : "TypeScript",
+    "exactCanonical" : true
+  }, {
+    "alias" : "prometheus",
+    "canonical" : "Prometheus",
+    "exactCanonical" : true
+  }, {
+    "alias" : "postgresql",
+    "canonical" : "PostgreSQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "postgresql",
+    "canonical" : "PostgreSQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "powershell",
+    "canonical" : "PowerShell",
+    "exactCanonical" : true
+  }, {
+    "alias" : "typescript",
+    "canonical" : "TypeScript",
+    "exactCanonical" : true
+  }, {
+    "alias" : "playwright",
+    "canonical" : "Playwright",
+    "exactCanonical" : true
+  }, {
+    "alias" : "llamaindex",
+    "canonical" : "LlamaIndex",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spring mvc",
+    "canonical" : "Spring MVC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "element ui",
+    "canonical" : "Element UI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cloudwatch",
+    "canonical" : "CloudWatch",
+    "exactCanonical" : true
+  }, {
+    "alias" : "aws lambda",
+    "canonical" : "AWS Lambda",
+    "exactCanonical" : true
+  }, {
+    "alias" : "kubernetes",
+    "canonical" : "Kubernetes",
+    "exactCanonical" : true
+  }, {
+    "alias" : "javascript",
+    "canonical" : "JavaScript",
+    "exactCanonical" : true
+  }, {
+    "alias" : "matplotlib",
+    "canonical" : "Matplotlib",
+    "exactCanonical" : true
+  }, {
+    "alias" : "boost.asio",
+    "canonical" : "Boost.Asio",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sql server",
+    "canonical" : "SQL Server",
+    "exactCanonical" : true
+  }, {
+    "alias" : "openai api",
+    "canonical" : "OpenAI API",
+    "exactCanonical" : true
+  }, {
+    "alias" : "css3 响应式布局",
+    "canonical" : "CSS",
+    "exactCanonical" : false
+  }, {
+    "alias" : "git/github",
+    "canonical" : "Git",
+    "exactCanonical" : false
+  }, {
+    "alias" : "git/github",
+    "canonical" : "GitHub",
+    "exactCanonical" : false
+  }, {
+    "alias" : "claude mcp",
+    "canonical" : "MCP",
+    "exactCanonical" : false
+  }, {
+    "alias" : "springboot",
+    "canonical" : "Spring Boot",
+    "exactCanonical" : false
+  }, {
+    "alias" : "kubernetes",
+    "canonical" : "Kubernetes",
+    "exactCanonical" : true
+  }, {
+    "alias" : "lang chain",
+    "canonical" : "LangChain",
+    "exactCanonical" : false
+  }, {
+    "alias" : "springmvc",
+    "canonical" : "Spring MVC",
+    "exactCanonical" : false
+  }, {
+    "alias" : "wireshark",
+    "canonical" : "Wireshark",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rt-thread",
+    "canonical" : "RT-Thread",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rocket mq",
+    "canonical" : "RocketMQ",
+    "exactCanonical" : false
+  }, {
+    "alias" : "bluetooth",
+    "canonical" : "蓝牙",
+    "exactCanonical" : false
+  }, {
+    "alias" : "deepspeed",
+    "canonical" : "DeepSpeed",
+    "exactCanonical" : true
+  }, {
+    "alias" : "coremedia",
+    "canonical" : "CoreMedia",
+    "exactCanonical" : true
+  }, {
+    "alias" : "embedding",
+    "canonical" : "Embedding",
+    "exactCanonical" : true
+  }, {
+    "alias" : "langchain",
+    "canonical" : "LangChain",
+    "exactCanonical" : true
+  }, {
+    "alias" : "transwarp",
+    "canonical" : "Transwarp",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hibernate",
+    "canonical" : "Hibernate",
+    "exactCanonical" : true
+  }, {
+    "alias" : "paddleocr",
+    "canonical" : "PaddleOCR",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mindspore",
+    "canonical" : "MindSpore",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vector db",
+    "canonical" : "Vector DB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "oceanbase",
+    "canonical" : "OceanBase",
+    "exactCanonical" : true
+  }, {
+    "alias" : "kustomize",
+    "canonical" : "Kustomize",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rt-thread",
+    "canonical" : "RT-Thread",
+    "exactCanonical" : true
+  }, {
+    "alias" : "deepspeed",
+    "canonical" : "DeepSpeed",
+    "exactCanonical" : true
+  }, {
+    "alias" : "storybook",
+    "canonical" : "Storybook",
+    "exactCanonical" : true
+  }, {
+    "alias" : "coremedia",
+    "canonical" : "CoreMedia",
+    "exactCanonical" : true
+  }, {
+    "alias" : "terraform",
+    "canonical" : "Terraform",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spring ai",
+    "canonical" : "Spring AI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "streamlit",
+    "canonical" : "Streamlit",
+    "exactCanonical" : true
+  }, {
+    "alias" : "langgraph",
+    "canonical" : "LangGraph",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hibernate",
+    "canonical" : "Hibernate",
+    "exactCanonical" : true
+  }, {
+    "alias" : "langchain",
+    "canonical" : "LangChain",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tinyllama",
+    "canonical" : "TinyLlama",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mediapipe",
+    "canonical" : "MediaPipe",
+    "exactCanonical" : true
+  }, {
+    "alias" : "photoshop",
+    "canonical" : "Photoshop",
+    "exactCanonical" : true
+  }, {
+    "alias" : "bootstrap",
+    "canonical" : "Bootstrap",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mindspore",
+    "canonical" : "MindSpore",
+    "exactCanonical" : true
+  }, {
+    "alias" : "wireshark",
+    "canonical" : "Wireshark",
+    "exactCanonical" : true
+  }, {
+    "alias" : "websocket",
+    "canonical" : "WebSocket",
+    "exactCanonical" : true
+  }, {
+    "alias" : "slimefun4",
+    "canonical" : "Slimefun4",
+    "exactCanonical" : true
+  }, {
+    "alias" : "css3响应式布局",
+    "canonical" : "CSS",
+    "exactCanonical" : false
+  }, {
+    "alias" : "html 网页设计",
+    "canonical" : "HTML",
+    "exactCanonical" : false
+  }, {
+    "alias" : "prompt 设计",
+    "canonical" : "Prompt Engineering",
+    "exactCanonical" : false
+  }, {
+    "alias" : "css3响应式布局",
+    "canonical" : "响应式设计",
+    "exactCanonical" : false
+  }, {
+    "alias" : "embedding",
+    "canonical" : "Embedding",
+    "exactCanonical" : true
+  }, {
+    "alias" : "langchain",
+    "canonical" : "LangChain",
+    "exactCanonical" : true
+  }, {
+    "alias" : "makefile",
+    "canonical" : "Makefile",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rtthread",
+    "canonical" : "RT-Thread",
+    "exactCanonical" : false
+  }, {
+    "alias" : "rocketmq",
+    "canonical" : "RocketMQ",
+    "exactCanonical" : true
+  }, {
+    "alias" : "naive ui",
+    "canonical" : "Naive UI",
+    "exactCanonical" : false
+  }, {
+    "alias" : "megatron",
+    "canonical" : "Megatron",
+    "exactCanonical" : true
+  }, {
+    "alias" : "electron",
+    "canonical" : "Electron",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ai原生数据平台",
+    "canonical" : "AI原生数据平台",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rocketmq",
+    "canonical" : "RocketMQ",
+    "exactCanonical" : true
+  }, {
+    "alias" : "logstash",
+    "canonical" : "Logstash",
+    "exactCanonical" : true
+  }, {
+    "alias" : "kubeflow",
+    "canonical" : "Kubeflow",
+    "exactCanonical" : true
+  }, {
+    "alias" : "移动通信网络安全",
+    "canonical" : "移动通信网络安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "supabase",
+    "canonical" : "Supabase",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rabbitmq",
+    "canonical" : "RabbitMQ",
+    "exactCanonical" : true
+  }, {
+    "alias" : "io_uring",
+    "canonical" : "io_uring",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ai agent",
+    "canonical" : "AI Agent",
+    "exactCanonical" : true
+  }, {
+    "alias" : "git flow",
+    "canonical" : "Git Flow",
+    "exactCanonical" : true
+  }, {
+    "alias" : "chart.js",
+    "canonical" : "Chart.js",
+    "exactCanonical" : true
+  }, {
+    "alias" : "chromadb",
+    "canonical" : "ChromaDB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dynamodb",
+    "canonical" : "DynamoDB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "markdown",
+    "canonical" : "Markdown",
+    "exactCanonical" : true
+  }, {
+    "alias" : "use case",
+    "canonical" : "Use Case",
+    "exactCanonical" : true
+  }, {
+    "alias" : "power bi",
+    "canonical" : "Power BI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "node-red",
+    "canonical" : "Node-RED",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ai agent",
+    "canonical" : "AI Agent",
+    "exactCanonical" : true
+  }, {
+    "alias" : "megatron",
+    "canonical" : "Megatron",
+    "exactCanonical" : true
+  }, {
+    "alias" : "makefile",
+    "canonical" : "Makefile",
+    "exactCanonical" : true
+  }, {
+    "alias" : "deepseek",
+    "canonical" : "DeepSeek",
+    "exactCanonical" : true
+  }, {
+    "alias" : "naive ui",
+    "canonical" : "Naive UI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "assembly",
+    "canonical" : "Assembly",
+    "exactCanonical" : true
+  }, {
+    "alias" : "supabase",
+    "canonical" : "Supabase",
+    "exactCanonical" : true
+  }, {
+    "alias" : "three.js",
+    "canonical" : "Three.js",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ascend c",
+    "canonical" : "Ascend C",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rocketmq",
+    "canonical" : "RocketMQ",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rabbitmq",
+    "canonical" : "RabbitMQ",
+    "exactCanonical" : true
+  }, {
+    "alias" : "electron",
+    "canonical" : "Electron",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rest api",
+    "canonical" : "REST API",
+    "exactCanonical" : true
+  }, {
+    "alias" : "firebase",
+    "canonical" : "Firebase",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mixpanel",
+    "canonical" : "Mixpanel",
+    "exactCanonical" : true
+  }, {
+    "alias" : "bert-lda",
+    "canonical" : "BERT-LDA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "react 18",
+    "canonical" : "React",
+    "exactCanonical" : false
+  }, {
+    "alias" : "ui/ux 优化",
+    "canonical" : "UI/UX",
+    "exactCanonical" : false
+  }, {
+    "alias" : "python语言",
+    "canonical" : "Python",
+    "exactCanonical" : false
+  }, {
+    "alias" : "mysql数据库",
+    "canonical" : "MySQL",
+    "exactCanonical" : false
+  }, {
+    "alias" : "docker容器",
+    "canonical" : "Docker",
+    "exactCanonical" : false
+  }, {
+    "alias" : "pinecone",
+    "canonical" : "向量数据库",
+    "exactCanonical" : false
+  }, {
+    "alias" : "pgvector",
+    "canonical" : "向量数据库",
+    "exactCanonical" : false
+  }, {
+    "alias" : "recall@k",
+    "canonical" : "模型评测",
+    "exactCanonical" : false
+  }, {
+    "alias" : "ai agent",
+    "canonical" : "AI Agent",
+    "exactCanonical" : true
+  }, {
+    "alias" : "git lab",
+    "canonical" : "GitLab",
+    "exactCanonical" : false
+  }, {
+    "alias" : "jenkins",
+    "canonical" : "Jenkins",
+    "exactCanonical" : true
+  }, {
+    "alias" : "web rtc",
+    "canonical" : "WebRTC",
+    "exactCanonical" : false
+  }, {
+    "alias" : "airplay",
+    "canonical" : "AirPlay",
+    "exactCanonical" : true
+  }, {
+    "alias" : "android",
+    "canonical" : "Android",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mybatis",
+    "canonical" : "MyBatis",
+    "exactCanonical" : true
+  }, {
+    "alias" : "naiveui",
+    "canonical" : "Naive UI",
+    "exactCanonical" : false
+  }, {
+    "alias" : "nuxt.js",
+    "canonical" : "Nuxt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "linux脚本",
+    "canonical" : "Linux脚本",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据agent",
+    "canonical" : "数据Agent",
+    "exactCanonical" : true
+  }, {
+    "alias" : "网络与信息安全",
+    "canonical" : "网络与信息安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gaussdb",
+    "canonical" : "GaussDB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "airflow",
+    "canonical" : "Airflow",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mybatis",
+    "canonical" : "MyBatis",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ivfflat",
+    "canonical" : "IVFFlat",
+    "exactCanonical" : true
+  }, {
+    "alias" : "grafana",
+    "canonical" : "Grafana",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mongodb",
+    "canonical" : "MongoDB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "diskann",
+    "canonical" : "DiskANN",
+    "exactCanonical" : true
+  }, {
+    "alias" : "node.js",
+    "canonical" : "Node.js",
+    "exactCanonical" : true
+  }, {
+    "alias" : "fastapi",
+    "canonical" : "FastAPI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jvm性能调优",
+    "canonical" : "JVM性能调优",
+    "exactCanonical" : true
+  }, {
+    "alias" : "非关系型数据库",
+    "canonical" : "非关系型数据库",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pytorch",
+    "canonical" : "PyTorch",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ai自动化运维",
+    "canonical" : "AI自动化运维",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jenkins",
+    "canonical" : "Jenkins",
+    "exactCanonical" : true
+  }, {
+    "alias" : "horovod",
+    "canonical" : "Horovod",
+    "exactCanonical" : true
+  }, {
+    "alias" : "explain",
+    "canonical" : "Explain",
+    "exactCanonical" : true
+  }, {
+    "alias" : "newsapi",
+    "canonical" : "NewsAPI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mybatis",
+    "canonical" : "MyBatis",
+    "exactCanonical" : true
+  }, {
+    "alias" : "openapi",
+    "canonical" : "OpenAPI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "fastapi",
+    "canonical" : "FastAPI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cypress",
+    "canonical" : "Cypress",
+    "exactCanonical" : true
+  }, {
+    "alias" : "uni-app",
+    "canonical" : "uni-app",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据结构与算法",
+    "canonical" : "数据结构与算法",
+    "exactCanonical" : true
+  }, {
+    "alias" : "echarts",
+    "canonical" : "ECharts",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jenkins",
+    "canonical" : "Jenkins",
+    "exactCanonical" : true
+  }, {
+    "alias" : "codesys",
+    "canonical" : "CODESYS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "lcd1602",
+    "canonical" : "LCD1602",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hiagent",
+    "canonical" : "HiAgent",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jasmine",
+    "canonical" : "Jasmine",
+    "exactCanonical" : true
+  }, {
+    "alias" : "datadog",
+    "canonical" : "Datadog",
+    "exactCanonical" : true
+  }, {
+    "alias" : "webpack",
+    "canonical" : "Webpack",
+    "exactCanonical" : true
+  }, {
+    "alias" : "laravel",
+    "canonical" : "Laravel",
+    "exactCanonical" : true
+  }, {
+    "alias" : "graphql",
+    "canonical" : "GraphQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "at89c52",
+    "canonical" : "AT89C52",
+    "exactCanonical" : true
+  }, {
+    "alias" : "next.js",
+    "canonical" : "Next.js",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mongodb",
+    "canonical" : "MongoDB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sha-256",
+    "canonical" : "SHA-256",
+    "exactCanonical" : true
+  }, {
+    "alias" : "airplay",
+    "canonical" : "AirPlay",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pytorch",
+    "canonical" : "PyTorch",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ag grid",
+    "canonical" : "AG Grid",
+    "exactCanonical" : true
+  }, {
+    "alias" : "angular",
+    "canonical" : "Angular",
+    "exactCanonical" : true
+  }, {
+    "alias" : "postman",
+    "canonical" : "Postman",
+    "exactCanonical" : true
+  }, {
+    "alias" : "runloop",
+    "canonical" : "RunLoop",
+    "exactCanonical" : true
+  }, {
+    "alias" : "llm api",
+    "canonical" : "LLM API",
+    "exactCanonical" : true
+  }, {
+    "alias" : "arabert",
+    "canonical" : "AraBERT",
+    "exactCanonical" : true
+  }, {
+    "alias" : "arduino",
+    "canonical" : "Arduino",
+    "exactCanonical" : true
+  }, {
+    "alias" : "node.js",
+    "canonical" : "Node.js",
+    "exactCanonical" : true
+  }, {
+    "alias" : "飞书 aily",
+    "canonical" : "飞书 Aily",
+    "exactCanonical" : true
+  }, {
+    "alias" : "flutter",
+    "canonical" : "Flutter",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ucos ii",
+    "canonical" : "Ucos II",
+    "exactCanonical" : true
+  }, {
+    "alias" : "android",
+    "canonical" : "Android",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nuxt.js",
+    "canonical" : "Nuxt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "ag-grid",
+    "canonical" : "AG Grid",
+    "exactCanonical" : false
+  }, {
+    "alias" : "naiveui",
+    "canonical" : "Naive UI",
+    "exactCanonical" : false
+  }, {
+    "alias" : "redis缓存",
+    "canonical" : "Redis",
+    "exactCanonical" : false
+  }, {
+    "alias" : "linux系统",
+    "canonical" : "Linux",
+    "exactCanonical" : false
+  }, {
+    "alias" : "agentic",
+    "canonical" : "AI Agent",
+    "exactCanonical" : false
+  }, {
+    "alias" : "servlet",
+    "canonical" : "JSP/Servlet",
+    "exactCanonical" : false
+  }, {
+    "alias" : "gitlab",
+    "canonical" : "GitLab",
+    "exactCanonical" : true
+  }, {
+    "alias" : "matlab",
+    "canonical" : "MATLAB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tcp/ip",
+    "canonical" : "TCP/IP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ffmpeg",
+    "canonical" : "FFmpeg",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vue.js",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "webrtc",
+    "canonical" : "WebRTC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nuxt 4",
+    "canonical" : "Nuxt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "spring",
+    "canonical" : "Spring",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tomcat",
+    "canonical" : "Tomcat",
+    "exactCanonical" : true
+  }, {
+    "alias" : "triton",
+    "canonical" : "Triton",
+    "exactCanonical" : true
+  }, {
+    "alias" : "binlog",
+    "canonical" : "Binlog",
+    "exactCanonical" : true
+  }, {
+    "alias" : "socket",
+    "canonical" : "Socket",
+    "exactCanonical" : true
+  }, {
+    "alias" : "netcdf",
+    "canonical" : "NetCDF",
+    "exactCanonical" : true
+  }, {
+    "alias" : "unocss",
+    "canonical" : "UnoCSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据质量监控",
+    "canonical" : "数据质量监控",
+    "exactCanonical" : true
+  }, {
+    "alias" : "网络安全攻防",
+    "canonical" : "网络安全攻防",
+    "exactCanonical" : true
+  }, {
+    "alias" : "qdrant",
+    "canonical" : "Qdrant",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ai hub",
+    "canonical" : "AI HUB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cursor",
+    "canonical" : "Cursor",
+    "exactCanonical" : true
+  }, {
+    "alias" : "python",
+    "canonical" : "Python",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tomcat",
+    "canonical" : "Tomcat",
+    "exactCanonical" : true
+  }, {
+    "alias" : "自然语言处理",
+    "canonical" : "NLP",
+    "exactCanonical" : false
+  }, {
+    "alias" : "模型训练平台",
+    "canonical" : "模型训练平台",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hadoop",
+    "canonical" : "Hadoop",
+    "exactCanonical" : true
+  }, {
+    "alias" : "llmops",
+    "canonical" : "LLMOps",
+    "exactCanonical" : true
+  }, {
+    "alias" : "对象存储分层",
+    "canonical" : "对象存储分层",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据质量管理",
+    "canonical" : "数据质量管理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ipv6安全",
+    "canonical" : "IPv6安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "kserve",
+    "canonical" : "KServe",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据安全管理",
+    "canonical" : "数据安全管理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "docker",
+    "canonical" : "Docker",
+    "exactCanonical" : true
+  }, {
+    "alias" : "算力网络安全",
+    "canonical" : "算力网络安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "milvus",
+    "canonical" : "Milvus",
+    "exactCanonical" : true
+  }, {
+    "alias" : "容器镜像扫描",
+    "canonical" : "容器镜像扫描",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pandas",
+    "canonical" : "Pandas",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mlflow",
+    "canonical" : "MLflow",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据标准管理",
+    "canonical" : "数据标准管理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "oracle",
+    "canonical" : "Oracle",
+    "exactCanonical" : true
+  }, {
+    "alias" : "时间序列预测",
+    "canonical" : "时间序列预测",
+    "exactCanonical" : true
+  }, {
+    "alias" : "devops",
+    "canonical" : "DevOps",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据版本控制",
+    "canonical" : "数据版本控制",
+    "exactCanonical" : true
+  }, {
+    "alias" : "机器召回模型",
+    "canonical" : "机器召回模型",
+    "exactCanonical" : true
+  }, {
+    "alias" : "云原生数据库",
+    "canonical" : "云原生数据库",
+    "exactCanonical" : true
+  }, {
+    "alias" : "quartz",
+    "canonical" : "Quartz",
+    "exactCanonical" : true
+  }, {
+    "alias" : "binlog",
+    "canonical" : "Binlog",
+    "exactCanonical" : true
+  }, {
+    "alias" : "arcgis",
+    "canonical" : "ArcGIS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "matlab",
+    "canonical" : "MATLAB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gemini",
+    "canonical" : "Gemini",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sentry",
+    "canonical" : "Sentry",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sqlite",
+    "canonical" : "SQLite",
+    "exactCanonical" : true
+  }, {
+    "alias" : "5 whys",
+    "canonical" : "5 Whys",
+    "exactCanonical" : true
+  }, {
+    "alias" : "docker",
+    "canonical" : "Docker",
+    "exactCanonical" : true
+  }, {
+    "alias" : "webrtc",
+    "canonical" : "WebRTC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pandas",
+    "canonical" : "Pandas",
+    "exactCanonical" : true
+  }, {
+    "alias" : "svelte",
+    "canonical" : "Svelte",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spring",
+    "canonical" : "Spring",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hadoop",
+    "canonical" : "Hadoop",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gradle",
+    "canonical" : "Gradle",
+    "exactCanonical" : true
+  }, {
+    "alias" : "openai",
+    "canonical" : "OpenAI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "centos",
+    "canonical" : "CentOS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "plotly",
+    "canonical" : "Plotly",
+    "exactCanonical" : true
+  }, {
+    "alias" : "socket",
+    "canonical" : "Socket",
+    "exactCanonical" : true
+  }, {
+    "alias" : "github",
+    "canonical" : "GitHub",
+    "exactCanonical" : true
+  }, {
+    "alias" : "opencv",
+    "canonical" : "OpenCV",
+    "exactCanonical" : true
+  }, {
+    "alias" : "elixir",
+    "canonical" : "Elixir",
+    "exactCanonical" : true
+  }, {
+    "alias" : "scrapy",
+    "canonical" : "Scrapy",
+    "exactCanonical" : true
+  }, {
+    "alias" : "unocss",
+    "canonical" : "UnoCSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "python",
+    "canonical" : "Python",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tomcat",
+    "canonical" : "Tomcat",
+    "exactCanonical" : true
+  }, {
+    "alias" : "netcdf",
+    "canonical" : "NetCDF",
+    "exactCanonical" : true
+  }, {
+    "alias" : "triton",
+    "canonical" : "Triton",
+    "exactCanonical" : true
+  }, {
+    "alias" : "g-code",
+    "canonical" : "G-code",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tekton",
+    "canonical" : "Tekton",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pl/sql",
+    "canonical" : "PL/SQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "delphi",
+    "canonical" : "Delphi",
+    "exactCanonical" : true
+  }, {
+    "alias" : "aws s3",
+    "canonical" : "AWS S3",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mastra",
+    "canonical" : "Mastra",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tcp/ip",
+    "canonical" : "TCP/IP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "工作流自动化",
+    "canonical" : "工作流自动化",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gitlab",
+    "canonical" : "GitLab",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rest集成",
+    "canonical" : "REST API",
+    "exactCanonical" : false
+  }, {
+    "alias" : "nuxt 3",
+    "canonical" : "Nuxt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "nuxt 4",
+    "canonical" : "Nuxt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "udp 多播",
+    "canonical" : "UDP",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue.js",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "自然语言处理",
+    "canonical" : "NLP",
+    "exactCanonical" : false
+  }, {
+    "alias" : "java语言",
+    "canonical" : "Java",
+    "exactCanonical" : false
+  }, {
+    "alias" : "python",
+    "canonical" : "Python",
+    "exactCanonical" : true
+  }, {
+    "alias" : "docker",
+    "canonical" : "Docker",
+    "exactCanonical" : true
+  }, {
+    "alias" : "大型语言模型",
+    "canonical" : "LLM",
+    "exactCanonical" : false
+  }, {
+    "alias" : "prompt",
+    "canonical" : "Prompt Engineering",
+    "exactCanonical" : false
+  }, {
+    "alias" : "chroma",
+    "canonical" : "向量数据库",
+    "exactCanonical" : false
+  }, {
+    "alias" : "检索增强生成",
+    "canonical" : "RAG",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue 3",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "nginx",
+    "canonical" : "Nginx",
+    "exactCanonical" : true
+  }, {
+    "alias" : "音视频开发",
+    "canonical" : "音视频",
+    "exactCanonical" : false
+  }, {
+    "alias" : "axios",
+    "canonical" : "Axios",
+    "exactCanonical" : true
+  }, {
+    "alias" : "swift",
+    "canonical" : "Swift",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nuxt4",
+    "canonical" : "Nuxt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "分布式并行",
+    "canonical" : "分布式并行",
+    "exactCanonical" : true
+  }, {
+    "alias" : "html5",
+    "canonical" : "HTML",
+    "exactCanonical" : false
+  }, {
+    "alias" : "pinia",
+    "canonical" : "Pinia",
+    "exactCanonical" : true
+  }, {
+    "alias" : "maven",
+    "canonical" : "Maven",
+    "exactCanonical" : true
+  }, {
+    "alias" : "响应式设计",
+    "canonical" : "响应式设计",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dubbo",
+    "canonical" : "Dubbo",
+    "exactCanonical" : true
+  }, {
+    "alias" : "stm32",
+    "canonical" : "STM32",
+    "exactCanonical" : true
+  }, {
+    "alias" : "obj-c",
+    "canonical" : "Objective-C",
+    "exactCanonical" : false
+  }, {
+    "alias" : "cmake",
+    "canonical" : "CMake",
+    "exactCanonical" : true
+  }, {
+    "alias" : "传感器采集",
+    "canonical" : "传感器",
+    "exactCanonical" : false
+  }, {
+    "alias" : "esp32",
+    "canonical" : "ESP32",
+    "exactCanonical" : true
+  }, {
+    "alias" : "wi-fi",
+    "canonical" : "Wi-Fi",
+    "exactCanonical" : false
+  }, {
+    "alias" : "嵌入式开发",
+    "canonical" : "嵌入式",
+    "exactCanonical" : false
+  }, {
+    "alias" : "嵌入式系统",
+    "canonical" : "嵌入式",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue 3",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "时序数据库",
+    "canonical" : "时序数据库",
+    "exactCanonical" : true
+  }, {
+    "alias" : "maven",
+    "canonical" : "Maven",
+    "exactCanonical" : true
+  }, {
+    "alias" : "元数据管理",
+    "canonical" : "元数据管理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "linux",
+    "canonical" : "Linux",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pinia",
+    "canonical" : "Pinia",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据可视化",
+    "canonical" : "数据可视化",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ai4db",
+    "canonical" : "AI4DB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "安全大模型",
+    "canonical" : "安全大模型",
+    "exactCanonical" : true
+  }, {
+    "alias" : "自动化测试",
+    "canonical" : "自动化测试",
+    "exactCanonical" : true
+  }, {
+    "alias" : "大语言模型",
+    "canonical" : "LLM",
+    "exactCanonical" : false
+  }, {
+    "alias" : "kafka",
+    "canonical" : "Kafka",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式架构",
+    "canonical" : "分布式架构",
+    "exactCanonical" : true
+  }, {
+    "alias" : "云原生安全",
+    "canonical" : "云原生安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式系统",
+    "canonical" : "分布式系统",
+    "exactCanonical" : true
+  }, {
+    "alias" : "istio",
+    "canonical" : "Istio",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jvm调优",
+    "canonical" : "JVM调优",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dubbo",
+    "canonical" : "Dubbo",
+    "exactCanonical" : true
+  }, {
+    "alias" : "db4ai",
+    "canonical" : "DB4AI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "flink",
+    "canonical" : "Flink",
+    "exactCanonical" : true
+  }, {
+    "alias" : "模型鲁棒性",
+    "canonical" : "模型鲁棒性",
+    "exactCanonical" : true
+  }, {
+    "alias" : "axios",
+    "canonical" : "Axios",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hbase",
+    "canonical" : "HBase",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mlops",
+    "canonical" : "MLOps",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据流水线",
+    "canonical" : "数据流水线",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式计算",
+    "canonical" : "分布式计算",
+    "exactCanonical" : true
+  }, {
+    "alias" : "codex",
+    "canonical" : "Codex",
+    "exactCanonical" : true
+  }, {
+    "alias" : "faiss",
+    "canonical" : "FAISS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spark",
+    "canonical" : "Spark",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据库设计",
+    "canonical" : "数据库设计",
+    "exactCanonical" : true
+  }, {
+    "alias" : "seata",
+    "canonical" : "Seata",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nosql",
+    "canonical" : "NoSQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式事务",
+    "canonical" : "分布式事务",
+    "exactCanonical" : true
+  }, {
+    "alias" : "shell",
+    "canonical" : "Shell",
+    "exactCanonical" : true
+  }, {
+    "alias" : "flask",
+    "canonical" : "Flask",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ci/cd",
+    "canonical" : "CI/CD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "numpy",
+    "canonical" : "NumPy",
+    "exactCanonical" : true
+  }, {
+    "alias" : "redis",
+    "canonical" : "Redis",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dns安全",
+    "canonical" : "DNS安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "html5",
+    "canonical" : "HTML5",
+    "exactCanonical" : true
+  }, {
+    "alias" : "模型即服务",
+    "canonical" : "模型即服务",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sql调优",
+    "canonical" : "SQL调优",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据库连接",
+    "canonical" : "数据库连接",
+    "exactCanonical" : true
+  }, {
+    "alias" : "向量数据库",
+    "canonical" : "向量数据库",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nginx",
+    "canonical" : "Nginx",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式调度",
+    "canonical" : "分布式调度",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mysql",
+    "canonical" : "MySQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "二维码译码",
+    "canonical" : "二维码译码",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pinia",
+    "canonical" : "Pinia",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nginx",
+    "canonical" : "Nginx",
+    "exactCanonical" : true
+  }, {
+    "alias" : "swift",
+    "canonical" : "Swift",
+    "exactCanonical" : true
+  }, {
+    "alias" : "flask",
+    "canonical" : "Flask",
+    "exactCanonical" : true
+  }, {
+    "alias" : "poi检索",
+    "canonical" : "POI检索",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据集构建",
+    "canonical" : "数据集构建",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spark",
+    "canonical" : "Spark",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cmake",
+    "canonical" : "CMake",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spacy",
+    "canonical" : "SpaCy",
+    "exactCanonical" : true
+  }, {
+    "alias" : "react",
+    "canonical" : "React",
+    "exactCanonical" : true
+  }, {
+    "alias" : "响应式设计",
+    "canonical" : "响应式设计",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ui/ux",
+    "canonical" : "UI/UX",
+    "exactCanonical" : true
+  }, {
+    "alias" : "redis",
+    "canonical" : "Redis",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式并行",
+    "canonical" : "分布式并行",
+    "exactCanonical" : true
+  }, {
+    "alias" : "scrum",
+    "canonical" : "Scrum",
+    "exactCanonical" : true
+  }, {
+    "alias" : "arima",
+    "canonical" : "ARIMA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "latex",
+    "canonical" : "LaTeX",
+    "exactCanonical" : true
+  }, {
+    "alias" : "shell",
+    "canonical" : "Shell",
+    "exactCanonical" : true
+  }, {
+    "alias" : "agile",
+    "canonical" : "Agile",
+    "exactCanonical" : true
+  }, {
+    "alias" : "figma",
+    "canonical" : "Figma",
+    "exactCanonical" : true
+  }, {
+    "alias" : "axios",
+    "canonical" : "Axios",
+    "exactCanonical" : true
+  }, {
+    "alias" : "stm32",
+    "canonical" : "STM32",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mstar",
+    "canonical" : "Mstar",
+    "exactCanonical" : true
+  }, {
+    "alias" : "unity",
+    "canonical" : "Unity",
+    "exactCanonical" : true
+  }, {
+    "alias" : "karma",
+    "canonical" : "Karma",
+    "exactCanonical" : true
+  }, {
+    "alias" : "astro",
+    "canonical" : "Astro",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dubbo",
+    "canonical" : "Dubbo",
+    "exactCanonical" : true
+  }, {
+    "alias" : "wi-fi",
+    "canonical" : "Wi-Fi",
+    "exactCanonical" : true
+  }, {
+    "alias" : "qlora",
+    "canonical" : "QLoRA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "treap",
+    "canonical" : "Treap",
+    "exactCanonical" : true
+  }, {
+    "alias" : "零知识证明",
+    "canonical" : "零知识证明",
+    "exactCanonical" : true
+  }, {
+    "alias" : "razor",
+    "canonical" : "Razor",
+    "exactCanonical" : true
+  }, {
+    "alias" : "结构化数据",
+    "canonical" : "结构化数据",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mysql",
+    "canonical" : "MySQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "numpy",
+    "canonical" : "NumPy",
+    "exactCanonical" : true
+  }, {
+    "alias" : "llm评测",
+    "canonical" : "LLM评测",
+    "exactCanonical" : true
+  }, {
+    "alias" : "xampp",
+    "canonical" : "XAMPP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "excel",
+    "canonical" : "Excel",
+    "exactCanonical" : true
+  }, {
+    "alias" : "微信小程序",
+    "canonical" : "微信小程序",
+    "exactCanonical" : true
+  }, {
+    "alias" : "maven",
+    "canonical" : "Maven",
+    "exactCanonical" : true
+  }, {
+    "alias" : "esp32",
+    "canonical" : "ESP32",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ci/cd",
+    "canonical" : "CI/CD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "linux",
+    "canonical" : "Linux",
+    "exactCanonical" : true
+  }, {
+    "alias" : "boost",
+    "canonical" : "Boost",
+    "exactCanonical" : true
+  }, {
+    "alias" : "c++17",
+    "canonical" : "C++",
+    "exactCanonical" : false
+  }, {
+    "alias" : "c/c++",
+    "canonical" : "C++",
+    "exactCanonical" : false
+  }, {
+    "alias" : "ucosⅱ",
+    "canonical" : "Ucos II",
+    "exactCanonical" : false
+  }, {
+    "alias" : "nuxt3",
+    "canonical" : "Nuxt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "nuxt4",
+    "canonical" : "Nuxt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "c/c++",
+    "canonical" : "C",
+    "exactCanonical" : false
+  }, {
+    "alias" : "响应式布局",
+    "canonical" : "响应式设计",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue 1",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue 2",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue 3",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "ai/ml",
+    "canonical" : "机器学习",
+    "exactCanonical" : false
+  }, {
+    "alias" : "agent",
+    "canonical" : "AI Agent",
+    "exactCanonical" : false
+  }, {
+    "alias" : "音视频推流",
+    "canonical" : "音视频",
+    "exactCanonical" : false
+  }, {
+    "alias" : "sql优化",
+    "canonical" : "SQL优化",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式系统",
+    "canonical" : "分布式系统",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式架构",
+    "canonical" : "分布式系统",
+    "exactCanonical" : false
+  }, {
+    "alias" : "kafka",
+    "canonical" : "Kafka",
+    "exactCanonical" : true
+  }, {
+    "alias" : "微服务框架",
+    "canonical" : "Spring Cloud",
+    "exactCanonical" : false
+  }, {
+    "alias" : "mysql",
+    "canonical" : "MySQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "redis",
+    "canonical" : "Redis",
+    "exactCanonical" : true
+  }, {
+    "alias" : "缓存中间件",
+    "canonical" : "Redis",
+    "exactCanonical" : false
+  }, {
+    "alias" : "linux",
+    "canonical" : "Linux",
+    "exactCanonical" : true
+  }, {
+    "alias" : "微服务治理",
+    "canonical" : "微服务治理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "大语言模型",
+    "canonical" : "LLM",
+    "exactCanonical" : false
+  }, {
+    "alias" : "提示词工程",
+    "canonical" : "Prompt Engineering",
+    "exactCanonical" : false
+  }, {
+    "alias" : "向量数据库",
+    "canonical" : "向量数据库",
+    "exactCanonical" : true
+  }, {
+    "alias" : "知识库问答",
+    "canonical" : "RAG",
+    "exactCanonical" : false
+  }, {
+    "alias" : "rag评测",
+    "canonical" : "模型评测",
+    "exactCanonical" : false
+  }, {
+    "alias" : "大模型评测",
+    "canonical" : "模型评测",
+    "exactCanonical" : false
+  }, {
+    "alias" : "neo4j",
+    "canonical" : "知识图谱",
+    "exactCanonical" : false
+  }, {
+    "alias" : "agent",
+    "canonical" : "AI Agent",
+    "exactCanonical" : false
+  }, {
+    "alias" : "ssh框架",
+    "canonical" : "JSP/Servlet",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue3",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "rtsp",
+    "canonical" : "RTSP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "html",
+    "canonical" : "HTML",
+    "exactCanonical" : true
+  }, {
+    "alias" : "css3",
+    "canonical" : "CSS",
+    "exactCanonical" : false
+  }, {
+    "alias" : "面向对象",
+    "canonical" : "面向对象",
+    "exactCanonical" : true
+  }, {
+    "alias" : "串口通信",
+    "canonical" : "串口通信",
+    "exactCanonical" : true
+  }, {
+    "alias" : "可访问性",
+    "canonical" : "可访问性",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cann",
+    "canonical" : "CANN",
+    "exactCanonical" : true
+  }, {
+    "alias" : "raii",
+    "canonical" : "RAII",
+    "exactCanonical" : true
+  }, {
+    "alias" : "scss",
+    "canonical" : "SCSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mqtt",
+    "canonical" : "MQTT",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hdf5",
+    "canonical" : "HDF5",
+    "exactCanonical" : true
+  }, {
+    "alias" : "aiot",
+    "canonical" : "物联网",
+    "exactCanonical" : false
+  }, {
+    "alias" : "dlna",
+    "canonical" : "DLNA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vllm",
+    "canonical" : "vLLM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "fsdp",
+    "canonical" : "FSDP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "交叉编译",
+    "canonical" : "交叉编译",
+    "exactCanonical" : true
+  }, {
+    "alias" : "zero",
+    "canonical" : "ZeRO",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nuxt",
+    "canonical" : "Nuxt",
+    "exactCanonical" : true
+  }, {
+    "alias" : "wifi",
+    "canonical" : "Wi-Fi",
+    "exactCanonical" : false
+  }, {
+    "alias" : "冷热分层",
+    "canonical" : "冷热分层",
+    "exactCanonical" : true
+  }, {
+    "alias" : "存算分离",
+    "canonical" : "存算分离",
+    "exactCanonical" : true
+  }, {
+    "alias" : "j2ee",
+    "canonical" : "J2EE",
+    "exactCanonical" : true
+  }, {
+    "alias" : "异构计算",
+    "canonical" : "异构计算",
+    "exactCanonical" : true
+  }, {
+    "alias" : "基础模型",
+    "canonical" : "基础模型",
+    "exactCanonical" : true
+  }, {
+    "alias" : "fgsm",
+    "canonical" : "FGSM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "模型微调",
+    "canonical" : "微调",
+    "exactCanonical" : false
+  }, {
+    "alias" : "在线推理",
+    "canonical" : "在线推理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "混沌工程",
+    "canonical" : "混沌工程",
+    "exactCanonical" : true
+  }, {
+    "alias" : "人工智能",
+    "canonical" : "人工智能",
+    "exactCanonical" : true
+  }, {
+    "alias" : "强化学习",
+    "canonical" : "强化学习",
+    "exactCanonical" : true
+  }, {
+    "alias" : "单元测试",
+    "canonical" : "单元测试",
+    "exactCanonical" : true
+  }, {
+    "alias" : "模型推理",
+    "canonical" : "模型推理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "边缘计算",
+    "canonical" : "边缘计算",
+    "exactCanonical" : true
+  }, {
+    "alias" : "领域建模",
+    "canonical" : "领域建模",
+    "exactCanonical" : true
+  }, {
+    "alias" : "语义检索",
+    "canonical" : "语义检索",
+    "exactCanonical" : true
+  }, {
+    "alias" : "并发编程",
+    "canonical" : "并发编程",
+    "exactCanonical" : true
+  }, {
+    "alias" : "知识图谱",
+    "canonical" : "知识图谱",
+    "exactCanonical" : true
+  }, {
+    "alias" : "路由安全",
+    "canonical" : "路由安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "湖仓一体",
+    "canonical" : "湖仓一体",
+    "exactCanonical" : true
+  }, {
+    "alias" : "后门检测",
+    "canonical" : "后门检测",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据安全",
+    "canonical" : "数据安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据标注",
+    "canonical" : "数据标注",
+    "exactCanonical" : true
+  }, {
+    "alias" : "测试开发",
+    "canonical" : "测试开发",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ab实验",
+    "canonical" : "AB实验",
+    "exactCanonical" : true
+  }, {
+    "alias" : "模型评测",
+    "canonical" : "模型评测",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据仓库",
+    "canonical" : "数据仓库",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据治理",
+    "canonical" : "数据治理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "分布式锁",
+    "canonical" : "分布式锁",
+    "exactCanonical" : true
+  }, {
+    "alias" : "机器学习",
+    "canonical" : "机器学习",
+    "exactCanonical" : true
+  }, {
+    "alias" : "列式格式",
+    "canonical" : "列式格式",
+    "exactCanonical" : true
+  }, {
+    "alias" : "深度学习",
+    "canonical" : "深度学习",
+    "exactCanonical" : true
+  }, {
+    "alias" : "接口测试",
+    "canonical" : "接口测试",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据压缩",
+    "canonical" : "数据压缩",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tidb",
+    "canonical" : "TiDB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据管线",
+    "canonical" : "数据管线",
+    "exactCanonical" : true
+  }, {
+    "alias" : "argo",
+    "canonical" : "Argo",
+    "exactCanonical" : true
+  }, {
+    "alias" : "调度引擎",
+    "canonical" : "调度引擎",
+    "exactCanonical" : true
+  }, {
+    "alias" : "模型蒸馏",
+    "canonical" : "模型蒸馏",
+    "exactCanonical" : true
+  }, {
+    "alias" : "6g安全",
+    "canonical" : "6G安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据脱敏",
+    "canonical" : "数据脱敏",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mqtt",
+    "canonical" : "MQTT",
+    "exactCanonical" : true
+  }, {
+    "alias" : "对抗攻击",
+    "canonical" : "对抗攻击",
+    "exactCanonical" : true
+  }, {
+    "alias" : "模型管理",
+    "canonical" : "模型管理",
+    "exactCanonical" : true
+  }, {
+    "alias" : "压力测试",
+    "canonical" : "压力测试",
+    "exactCanonical" : true
+  }, {
+    "alias" : "推荐算法",
+    "canonical" : "推荐算法",
+    "exactCanonical" : true
+  }, {
+    "alias" : "maas",
+    "canonical" : "MaaS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "内容安全",
+    "canonical" : "内容安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "窗口函数",
+    "canonical" : "窗口函数",
+    "exactCanonical" : true
+  }, {
+    "alias" : "后端开发",
+    "canonical" : "后端开发",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cuda",
+    "canonical" : "CUDA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "helm",
+    "canonical" : "Helm",
+    "exactCanonical" : true
+  }, {
+    "alias" : "向量检索",
+    "canonical" : "向量检索",
+    "exactCanonical" : true
+  }, {
+    "alias" : "neon",
+    "canonical" : "Neon",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vite",
+    "canonical" : "Vite",
+    "exactCanonical" : true
+  }, {
+    "alias" : "对抗训练",
+    "canonical" : "对抗训练",
+    "exactCanonical" : true
+  }, {
+    "alias" : "统计分析",
+    "canonical" : "统计分析",
+    "exactCanonical" : true
+  }, {
+    "alias" : "css3",
+    "canonical" : "CSS",
+    "exactCanonical" : false
+  }, {
+    "alias" : "模型安全",
+    "canonical" : "模型安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dapr",
+    "canonical" : "Dapr",
+    "exactCanonical" : true
+  }, {
+    "alias" : "htap",
+    "canonical" : "HTAP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hive",
+    "canonical" : "Hive",
+    "exactCanonical" : true
+  }, {
+    "alias" : "存储过程",
+    "canonical" : "存储过程",
+    "exactCanonical" : true
+  }, {
+    "alias" : "scss",
+    "canonical" : "SCSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "saga",
+    "canonical" : "Saga",
+    "exactCanonical" : true
+  }, {
+    "alias" : "缓存策略",
+    "canonical" : "缓存策略",
+    "exactCanonical" : true
+  }, {
+    "alias" : "接口调用",
+    "canonical" : "接口调用",
+    "exactCanonical" : true
+  }, {
+    "alias" : "文本分析",
+    "canonical" : "文本分析",
+    "exactCanonical" : true
+  }, {
+    "alias" : "性能测试",
+    "canonical" : "性能测试",
+    "exactCanonical" : true
+  }, {
+    "alias" : "接口开发",
+    "canonical" : "接口开发",
+    "exactCanonical" : true
+  }, {
+    "alias" : "集成测试",
+    "canonical" : "集成测试",
+    "exactCanonical" : true
+  }, {
+    "alias" : "渗透测试",
+    "canonical" : "渗透测试",
+    "exactCanonical" : true
+  }, {
+    "alias" : "差分隐私",
+    "canonical" : "差分隐私",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dask",
+    "canonical" : "Dask",
+    "exactCanonical" : true
+  }, {
+    "alias" : "java",
+    "canonical" : "Java",
+    "exactCanonical" : true
+  }, {
+    "alias" : "scss",
+    "canonical" : "SCSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : ".net",
+    "canonical" : ".NET",
+    "exactCanonical" : true
+  }, {
+    "alias" : "verl",
+    "canonical" : "veRL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "面向对象",
+    "canonical" : "面向对象",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hdf5",
+    "canonical" : "HDF5",
+    "exactCanonical" : true
+  }, {
+    "alias" : "多智能体",
+    "canonical" : "多智能体",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dlna",
+    "canonical" : "DLNA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "lstm",
+    "canonical" : "LSTM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "smtp",
+    "canonical" : "SMTP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rbac",
+    "canonical" : "RBAC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "交叉编译",
+    "canonical" : "交叉编译",
+    "exactCanonical" : true
+  }, {
+    "alias" : "特征工程",
+    "canonical" : "特征工程",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mqtt",
+    "canonical" : "MQTT",
+    "exactCanonical" : true
+  }, {
+    "alias" : "raii",
+    "canonical" : "RAII",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gpio",
+    "canonical" : "GPIO",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dart",
+    "canonical" : "Dart",
+    "exactCanonical" : true
+  }, {
+    "alias" : "串口通信",
+    "canonical" : "串口通信",
+    "exactCanonical" : true
+  }, {
+    "alias" : "可访问性",
+    "canonical" : "可访问性",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ajax",
+    "canonical" : "Ajax",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jdbc",
+    "canonical" : "JDBC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "fsdp",
+    "canonical" : "FSDP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "room",
+    "canonical" : "Room",
+    "exactCanonical" : true
+  }, {
+    "alias" : "abac",
+    "canonical" : "ABAC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rust",
+    "canonical" : "Rust",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据加密",
+    "canonical" : "数据加密",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nltk",
+    "canonical" : "NLTK",
+    "exactCanonical" : true
+  }, {
+    "alias" : "html",
+    "canonical" : "HTML",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vite",
+    "canonical" : "Vite",
+    "exactCanonical" : true
+  }, {
+    "alias" : "taro",
+    "canonical" : "Taro",
+    "exactCanonical" : true
+  }, {
+    "alias" : "可观测性",
+    "canonical" : "可观测性",
+    "exactCanonical" : true
+  }, {
+    "alias" : "zero",
+    "canonical" : "ZeRO",
+    "exactCanonical" : true
+  }, {
+    "alias" : "axum",
+    "canonical" : "Axum",
+    "exactCanonical" : true
+  }, {
+    "alias" : "机器学习",
+    "canonical" : "机器学习",
+    "exactCanonical" : true
+  }, {
+    "alias" : "grpc",
+    "canonical" : "gRPC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "策略模式",
+    "canonical" : "策略模式",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ecdh",
+    "canonical" : "ECDH",
+    "exactCanonical" : true
+  }, {
+    "alias" : "coso",
+    "canonical" : "COSO",
+    "exactCanonical" : true
+  }, {
+    "alias" : "crud",
+    "canonical" : "CRUD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "混合检索",
+    "canonical" : "混合检索",
+    "exactCanonical" : true
+  }, {
+    "alias" : "java",
+    "canonical" : "Java",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rtsp",
+    "canonical" : "RTSP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sfml",
+    "canonical" : "SFML",
+    "exactCanonical" : true
+  }, {
+    "alias" : "bert",
+    "canonical" : "BERT",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jest",
+    "canonical" : "Jest",
+    "exactCanonical" : true
+  }, {
+    "alias" : "渗透测试",
+    "canonical" : "渗透测试",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nuxt",
+    "canonical" : "Nuxt",
+    "exactCanonical" : true
+  }, {
+    "alias" : "eval",
+    "canonical" : "Eval",
+    "exactCanonical" : true
+  }, {
+    "alias" : "lora",
+    "canonical" : "LoRA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "bm25",
+    "canonical" : "BM25",
+    "exactCanonical" : true
+  }, {
+    "alias" : "unix",
+    "canonical" : "Unix",
+    "exactCanonical" : true
+  }, {
+    "alias" : "随机森林",
+    "canonical" : "随机森林",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mvvm",
+    "canonical" : "MVVM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "bash",
+    "canonical" : "Bash",
+    "exactCanonical" : true
+  }, {
+    "alias" : "网络安全",
+    "canonical" : "网络安全",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jira",
+    "canonical" : "Jira",
+    "exactCanonical" : true
+  }, {
+    "alias" : "bpmn",
+    "canonical" : "BPMN",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vllm",
+    "canonical" : "vLLM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "百度千帆",
+    "canonical" : "百度千帆",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cann",
+    "canonical" : "CANN",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sdlc",
+    "canonical" : "SDLC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rest",
+    "canonical" : "REST API",
+    "exactCanonical" : false
+  }, {
+    "alias" : "wifi",
+    "canonical" : "Wi-Fi",
+    "exactCanonical" : false
+  }, {
+    "alias" : "c 语言",
+    "canonical" : "C",
+    "exactCanonical" : false
+  }, {
+    "alias" : "模型微调",
+    "canonical" : "微调",
+    "exactCanonical" : false
+  }, {
+    "alias" : "tika",
+    "canonical" : "Apache Tika",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue2",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "vue3",
+    "canonical" : "Vue",
+    "exactCanonical" : false
+  }, {
+    "alias" : "软件开发",
+    "canonical" : "软件开发",
+    "exactCanonical" : true
+  }, {
+    "alias" : "模型微调",
+    "canonical" : "微调",
+    "exactCanonical" : false
+  }, {
+    "alias" : "推荐算法",
+    "canonical" : "推荐算法",
+    "exactCanonical" : true
+  }, {
+    "alias" : "推荐系统",
+    "canonical" : "推荐算法",
+    "exactCanonical" : false
+  }, {
+    "alias" : "强化学习",
+    "canonical" : "强化学习",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rlhf",
+    "canonical" : "强化学习",
+    "exactCanonical" : false
+  }, {
+    "alias" : "java",
+    "canonical" : "Java",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sb框架",
+    "canonical" : "Spring Boot",
+    "exactCanonical" : false
+  }, {
+    "alias" : "容器编排",
+    "canonical" : "Kubernetes",
+    "exactCanonical" : false
+  }, {
+    "alias" : "消息队列",
+    "canonical" : "消息队列",
+    "exactCanonical" : true
+  }, {
+    "alias" : "服务治理",
+    "canonical" : "微服务治理",
+    "exactCanonical" : false
+  }, {
+    "alias" : "限流熔断",
+    "canonical" : "微服务治理",
+    "exactCanonical" : false
+  }, {
+    "alias" : "注册中心",
+    "canonical" : "微服务治理",
+    "exactCanonical" : false
+  }, {
+    "alias" : "文本向量",
+    "canonical" : "Embedding",
+    "exactCanonical" : false
+  }, {
+    "alias" : "嵌入模型",
+    "canonical" : "Embedding",
+    "exactCanonical" : false
+  }, {
+    "alias" : "模型评测",
+    "canonical" : "模型评测",
+    "exactCanonical" : true
+  }, {
+    "alias" : "评测体系",
+    "canonical" : "模型评测",
+    "exactCanonical" : false
+  }, {
+    "alias" : "知识图谱",
+    "canonical" : "知识图谱",
+    "exactCanonical" : true
+  }, {
+    "alias" : "图数据库",
+    "canonical" : "知识图谱",
+    "exactCanonical" : false
+  }, {
+    "alias" : "权限控制",
+    "canonical" : "权限控制",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rbac",
+    "canonical" : "权限控制",
+    "exactCanonical" : false
+  }, {
+    "alias" : "数据权限",
+    "canonical" : "权限控制",
+    "exactCanonical" : false
+  }, {
+    "alias" : "udp",
+    "canonical" : "UDP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "音视频",
+    "canonical" : "音视频",
+    "exactCanonical" : true
+  }, {
+    "alias" : "c++",
+    "canonical" : "C++",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cpp",
+    "canonical" : "C++",
+    "exactCanonical" : false
+  }, {
+    "alias" : "ios",
+    "canonical" : "iOS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "fec",
+    "canonical" : "FEC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vue",
+    "canonical" : "Vue",
+    "exactCanonical" : true
+  }, {
+    "alias" : "kcp",
+    "canonical" : "KCP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "git",
+    "canonical" : "Git",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tcp",
+    "canonical" : "TCP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "css",
+    "canonical" : "CSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mpi",
+    "canonical" : "MPI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hls",
+    "canonical" : "HLS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gdb",
+    "canonical" : "GDB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "状态机",
+    "canonical" : "状态机",
+    "exactCanonical" : true
+  }, {
+    "alias" : "p2p",
+    "canonical" : "P2P",
+    "exactCanonical" : true
+  }, {
+    "alias" : "物联网",
+    "canonical" : "物联网",
+    "exactCanonical" : true
+  }, {
+    "alias" : "iot",
+    "canonical" : "物联网",
+    "exactCanonical" : false
+  }, {
+    "alias" : "ssg",
+    "canonical" : "SSG",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ssr",
+    "canonical" : "SSR",
+    "exactCanonical" : true
+  }, {
+    "alias" : "传感器",
+    "canonical" : "传感器",
+    "exactCanonical" : true
+  }, {
+    "alias" : "c语言",
+    "canonical" : "C",
+    "exactCanonical" : false
+  }, {
+    "alias" : "stl",
+    "canonical" : "STL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "嵌入式",
+    "canonical" : "嵌入式",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ota",
+    "canonical" : "OTA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "微服务",
+    "canonical" : "微服务",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tke",
+    "canonical" : "TKE",
+    "exactCanonical" : true
+  }, {
+    "alias" : "uml",
+    "canonical" : "UML",
+    "exactCanonical" : true
+  }, {
+    "alias" : "oss",
+    "canonical" : "OSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "多模态",
+    "canonical" : "多模态",
+    "exactCanonical" : true
+  }, {
+    "alias" : "云原生",
+    "canonical" : "云原生",
+    "exactCanonical" : true
+  }, {
+    "alias" : "etl",
+    "canonical" : "ETL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pgd",
+    "canonical" : "PGD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "物联网",
+    "canonical" : "物联网",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ddd",
+    "canonical" : "DDD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gis",
+    "canonical" : "GIS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "git",
+    "canonical" : "Git",
+    "exactCanonical" : true
+  }, {
+    "alias" : "多线程",
+    "canonical" : "多线程",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cce",
+    "canonical" : "CCE",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jpa",
+    "canonical" : "JPA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dvc",
+    "canonical" : "DVC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mvc",
+    "canonical" : "MVC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rpc",
+    "canonical" : "RPC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "高并发",
+    "canonical" : "高并发",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ack",
+    "canonical" : "ACK",
+    "exactCanonical" : true
+  }, {
+    "alias" : "线程池",
+    "canonical" : "线程池",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rag",
+    "canonical" : "RAG",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ray",
+    "canonical" : "Ray",
+    "exactCanonical" : true
+  }, {
+    "alias" : "elk",
+    "canonical" : "ELK",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gpu",
+    "canonical" : "GPU",
+    "exactCanonical" : true
+  }, {
+    "alias" : "数据湖",
+    "canonical" : "数据湖",
+    "exactCanonical" : true
+  }, {
+    "alias" : "c++",
+    "canonical" : "C++",
+    "exactCanonical" : true
+  }, {
+    "alias" : "srm",
+    "canonical" : "SRM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "srs",
+    "canonical" : "SRS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "腾讯云",
+    "canonical" : "腾讯云",
+    "exactCanonical" : true
+  }, {
+    "alias" : "鱼骨图",
+    "canonical" : "鱼骨图",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sse",
+    "canonical" : "SSE",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mpi",
+    "canonical" : "MPI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ssg",
+    "canonical" : "SSG",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ssh",
+    "canonical" : "SSH",
+    "exactCanonical" : true
+  }, {
+    "alias" : "css",
+    "canonical" : "CSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ssr",
+    "canonical" : "SSR",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rcm",
+    "canonical" : "RCM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "udp",
+    "canonical" : "UDP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "嵌入式",
+    "canonical" : "嵌入式",
+    "exactCanonical" : true
+  }, {
+    "alias" : "桶排序",
+    "canonical" : "桶排序",
+    "exactCanonical" : true
+  }, {
+    "alias" : "物联网",
+    "canonical" : "物联网",
+    "exactCanonical" : true
+  }, {
+    "alias" : "stl",
+    "canonical" : "STL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ocr",
+    "canonical" : "OCR",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gps",
+    "canonical" : "GPS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "nlp",
+    "canonical" : "NLP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "bun",
+    "canonical" : "Bun",
+    "exactCanonical" : true
+  }, {
+    "alias" : "git",
+    "canonical" : "Git",
+    "exactCanonical" : true
+  }, {
+    "alias" : "api",
+    "canonical" : "API",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mvc",
+    "canonical" : "MVC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "pwm",
+    "canonical" : "PWM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mvi",
+    "canonical" : "MVI",
+    "exactCanonical" : true
+  }, {
+    "alias" : "状态机",
+    "canonical" : "状态机",
+    "exactCanonical" : true
+  }, {
+    "alias" : "c++",
+    "canonical" : "C++",
+    "exactCanonical" : true
+  }, {
+    "alias" : "drm",
+    "canonical" : "DRM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hls",
+    "canonical" : "HLS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "lua",
+    "canonical" : "Lua",
+    "exactCanonical" : true
+  }, {
+    "alias" : "微服务",
+    "canonical" : "微服务",
+    "exactCanonical" : true
+  }, {
+    "alias" : "arm",
+    "canonical" : "ARM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "fec",
+    "canonical" : "FEC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "jwt",
+    "canonical" : "JWT",
+    "exactCanonical" : true
+  }, {
+    "alias" : "uml",
+    "canonical" : "UML",
+    "exactCanonical" : true
+  }, {
+    "alias" : "seo",
+    "canonical" : "SEO",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vue",
+    "canonical" : "Vue",
+    "exactCanonical" : true
+  }, {
+    "alias" : "iac",
+    "canonical" : "IaC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "mcp",
+    "canonical" : "MCP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hql",
+    "canonical" : "HQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "传感器",
+    "canonical" : "传感器",
+    "exactCanonical" : true
+  }, {
+    "alias" : "llm",
+    "canonical" : "LLM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "aws",
+    "canonical" : "AWS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dao",
+    "canonical" : "DAO",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gcd",
+    "canonical" : "GCD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dax",
+    "canonical" : "DAX",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rpm",
+    "canonical" : "RPM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "erd",
+    "canonical" : "ERD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "erp",
+    "canonical" : "ERP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "gdb",
+    "canonical" : "GDB",
+    "exactCanonical" : true
+  }, {
+    "alias" : "php",
+    "canonical" : "PHP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "预训练",
+    "canonical" : "预训练",
+    "exactCanonical" : true
+  }, {
+    "alias" : "tcp",
+    "canonical" : "TCP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ddd",
+    "canonical" : "DDD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "etl",
+    "canonical" : "ETL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "p2p",
+    "canonical" : "P2P",
+    "exactCanonical" : true
+  }, {
+    "alias" : "音视频",
+    "canonical" : "音视频",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rsa",
+    "canonical" : "RSA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rss",
+    "canonical" : "RSS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ios",
+    "canonical" : "iOS",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rtp",
+    "canonical" : "RTP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "dfd",
+    "canonical" : "DFD",
+    "exactCanonical" : true
+  }, {
+    "alias" : "plc",
+    "canonical" : "PLC",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ota",
+    "canonical" : "OTA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "aeo",
+    "canonical" : "AEO",
+    "exactCanonical" : true
+  }, {
+    "alias" : "aes",
+    "canonical" : "AES",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cnn",
+    "canonical" : "CNN",
+    "exactCanonical" : true
+  }, {
+    "alias" : "vpn",
+    "canonical" : "VPN",
+    "exactCanonical" : true
+  }, {
+    "alias" : "区块链",
+    "canonical" : "区块链",
+    "exactCanonical" : true
+  }, {
+    "alias" : "kcp",
+    "canonical" : "KCP",
+    "exactCanonical" : true
+  }, {
+    "alias" : "spa",
+    "canonical" : "SPA",
+    "exactCanonical" : true
+  }, {
+    "alias" : "组件化",
+    "canonical" : "组件化",
+    "exactCanonical" : true
+  }, {
+    "alias" : "插件化",
+    "canonical" : "插件化",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sql",
+    "canonical" : "SQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "rag",
+    "canonical" : "RAG",
+    "exactCanonical" : true
+  }, {
+    "alias" : "hdr",
+    "canonical" : "HDR",
+    "exactCanonical" : true
+  }, {
+    "alias" : "区间树",
+    "canonical" : "区间树",
+    "exactCanonical" : true
+  }, {
+    "alias" : "防火墙",
+    "canonical" : "防火墙",
+    "exactCanonical" : true
+  }, {
+    "alias" : "大模型",
+    "canonical" : "LLM",
+    "exactCanonical" : false
+  }, {
+    "alias" : "qt6",
+    "canonical" : "Qt",
+    "exactCanonical" : false
+  }, {
+    "alias" : "oop",
+    "canonical" : "面向对象",
+    "exactCanonical" : false
+  }, {
+    "alias" : "cra",
+    "canonical" : "Create React App",
+    "exactCanonical" : false
+  }, {
+    "alias" : "gcp",
+    "canonical" : "Google Cloud",
+    "exactCanonical" : false
+  }, {
+    "alias" : "sql",
+    "canonical" : "SQL",
+    "exactCanonical" : true
+  }, {
+    "alias" : "sft",
+    "canonical" : "微调",
+    "exactCanonical" : false
+  }, {
+    "alias" : "nlp",
+    "canonical" : "NLP",
+    "exactCanonical" : false
+  }, {
+    "alias" : "jvm",
+    "canonical" : "Java",
+    "exactCanonical" : false
+  }, {
+    "alias" : "容器化",
+    "canonical" : "Docker",
+    "exactCanonical" : false
+  }, {
+    "alias" : "k8s",
+    "canonical" : "Kubernetes",
+    "exactCanonical" : false
+  }, {
+    "alias" : "llm",
+    "canonical" : "LLM",
+    "exactCanonical" : true
+  }, {
+    "alias" : "大模型",
+    "canonical" : "LLM",
+    "exactCanonical" : false
+  }, {
+    "alias" : "向量化",
+    "canonical" : "Embedding",
+    "exactCanonical" : false
+  }, {
+    "alias" : "rag",
+    "canonical" : "RAG",
+    "exactCanonical" : true
+  }, {
+    "alias" : "幻觉率",
+    "canonical" : "模型评测",
+    "exactCanonical" : false
+  }, {
+    "alias" : "智能体",
+    "canonical" : "AI Agent",
+    "exactCanonical" : false
+  }, {
+    "alias" : "jsp",
+    "canonical" : "JSP/Servlet",
+    "exactCanonical" : false
+  }, {
+    "alias" : "qt",
+    "canonical" : "Qt",
+    "exactCanonical" : true
+  }, {
+    "alias" : "ts",
+    "canonical" : "TypeScript",
+    "exactCanonical" : false
+  }, {
+    "alias" : "es",
+    "canonical" : "Elasticsearch",
+    "exactCanonical" : false
+  }, {
+    "alias" : "蓝牙",
+    "canonical" : "蓝牙",
+    "exactCanonical" : true
+  }, {
+    "alias" : "js",
+    "canonical" : "JavaScript",
+    "exactCanonical" : false
+  }, {
+    "alias" : "遥感",
+    "canonical" : "遥感",
+    "exactCanonical" : true
+  }, {
+    "alias" : "注解",
+    "canonical" : "注解",
+    "exactCanonical" : true
+  }, {
+    "alias" : "禅道",
+    "canonical" : "禅道",
+    "exactCanonical" : true
+  }, {
+    "alias" : "c#",
+    "canonical" : "C#",
+    "exactCanonical" : true
+  }, {
+    "alias" : "cw",
+    "canonical" : "CW",
+    "exactCanonical" : true
+  }, {
+    "alias" : "列存",
+    "canonical" : "列存",
+    "exactCanonical" : true
+  }, {
+    "alias" : "反射",
+    "canonical" : "反射",
+    "exactCanonical" : true
+  }, {
+    "alias" : "qt",
+    "canonical" : "Qt",
+    "exactCanonical" : true
+  }, {
+    "alias" : "c#",
+    "canonical" : "C#",
+    "exactCanonical" : true
+  }, {
+    "alias" : "go",
+    "canonical" : "Go",
+    "exactCanonical" : true
+  }, {
+    "alias" : "微调",
+    "canonical" : "微调",
+    "exactCanonical" : true
+  }, {
+    "alias" : "蓝牙",
+    "canonical" : "蓝牙",
+    "exactCanonical" : true
+  }, {
+    "alias" : "go",
+    "canonical" : "Go",
+    "exactCanonical" : true
+  }, {
+    "alias" : "微调",
+    "canonical" : "微调",
+    "exactCanonical" : false
+  }, {
+    "alias" : "mq",
+    "canonical" : "消息队列",
+    "exactCanonical" : false
+  }, {
+    "alias" : "c",
+    "canonical" : "C",
+    "exactCanonical" : true
+  }, {
+    "alias" : "c",
+    "canonical" : "C",
+    "exactCanonical" : true
+  }, {
+    "alias" : "r",
+    "canonical" : "R",
+    "exactCanonical" : true
+  } ]
+}

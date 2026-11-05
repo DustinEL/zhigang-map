@@ -1,0 +1,125 @@
+spring:
+  application:
+    name: zhigang-backend
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:demo}
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  jackson:
+    default-property-inclusion: non_null
+    time-zone: Asia/Shanghai
+
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        secure: ${SECURE_COOKIE:false}
+        same-site: strict
+
+springdoc:
+  api-docs:
+    enabled: ${SPRINGDOC_ENABLED:true}
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: ${SPRINGDOC_ENABLED:true}
+
+management:
+  health:
+    redis:
+      enabled: ${ZHIGANG_REDIS_ENABLED:false}
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+zhigang:
+  source:
+    authorized-directory: ${ZHIGANG_IMPORT_DIRECTORY:}
+    scan-delay-ms: ${ZHIGANG_IMPORT_SCAN_DELAY_MS:300000}
+    rss:
+      url: ${ZHIGANG_RSS_URL:}
+      source-name: ${ZHIGANG_RSS_SOURCE_NAME:}
+      source-type: ${ZHIGANG_RSS_SOURCE_TYPE:RECRUITMENT_JD}
+      license-status: ${ZHIGANG_RSS_LICENSE_STATUS:}
+      license-note: ${ZHIGANG_RSS_LICENSE_NOTE:}
+      scan-delay-ms: ${ZHIGANG_RSS_SCAN_DELAY_MS:1800000}
+  security:
+    dev-permit-all: ${DEV_PERMIT_ALL:false}
+    secure-cookie: ${SECURE_COOKIE:false}
+    professional-username: ${PROFESSIONAL_USERNAME:}
+    professional-password: ${PROFESSIONAL_PASSWORD:}
+    reviewer-username: ${REVIEWER_USERNAME:}
+    reviewer-password: ${REVIEWER_PASSWORD:}
+    login-max-failures: ${PROFESSIONAL_LOGIN_MAX_FAILURES:5}
+    login-window-minutes: ${PROFESSIONAL_LOGIN_WINDOW_MINUTES:15}
+  redis:
+    enabled: ${ZHIGANG_REDIS_ENABLED:false}
+  analysis:
+    policy-version: v1.0.0
+    half-life-days: 180
+    emerging-min-documents: 8
+    emerging-min-companies: 5
+    emerging-min-sources: 2
+    conclusion-min-companies: ${CONCLUSION_MIN_COMPANIES:2}
+    conclusion-min-sources: ${CONCLUSION_MIN_SOURCES:1}
+    emerging:
+      worker-endpoint: ${EMERGING_WORKER_ENDPOINT:http://127.0.0.1:8090}
+      worker-connect-timeout-ms: ${EMERGING_WORKER_CONNECT_TIMEOUT_MS:3000}
+      worker-read-timeout-ms: ${EMERGING_WORKER_READ_TIMEOUT_MS:120000}
+      embedding-collection: ${EMERGING_QDRANT_COLLECTION:zhigang_emerging_embeddings}
+      query-collection: ${EMERGING_QUERY_QDRANT_COLLECTION:zhigang_emerging_queries}
+      query-cache-similarity: ${EMERGING_QUERY_CACHE_SIMILARITY:0.93}
+      existing-role-similarity: ${EMERGING_QUERY_EXISTING_ROLE_SIMILARITY:0.88}
+      query-min-evidence: ${EMERGING_QUERY_MIN_EVIDENCE:3}
+      query-min-sources: ${EMERGING_QUERY_MIN_SOURCES:2}
+  evaluation:
+    report-path: ${EVALUATION_REPORT_PATH:}
+  structured-jd:
+    policy-version: ${STRUCTURED_JD_POLICY_VERSION:jd-pilot-v1.1}
+    triage-policy-version: ${STRUCTURED_JD_TRIAGE_POLICY_VERSION:jd-triage-v2.0}
+    max-request-bytes: ${STRUCTURED_JD_MAX_REQUEST_BYTES:31457280}
+    auto-quality-threshold: ${STRUCTURED_JD_AUTO_QUALITY_THRESHOLD:0.95}
+    auto-confidence-threshold: ${STRUCTURED_JD_AUTO_CONFIDENCE_THRESHOLD:0.85}
+    sample-rate: ${STRUCTURED_JD_SAMPLE_RATE:0.10}
+  privacy:
+    cleanup-delay-ms: ${ZHIGANG_PRIVACY_CLEANUP_DELAY_MS:3600000}
+  resume:
+    ocr-endpoint: ${RESUME_OCR_ENDPOINT:http://127.0.0.1:8090/v1/resume-ocr}
+    ocr-connect-timeout-ms: ${RESUME_OCR_CONNECT_TIMEOUT_MS:3000}
+    ocr-read-timeout-ms: ${RESUME_OCR_READ_TIMEOUT_MS:120000}
+  ai:
+    provider: ${AI_PROVIDER:local}
+    prompt-policy-version: ${AI_PROMPT_POLICY_VERSION:prompt-v2}
+    local:
+      endpoint: ${LOCAL_LLM_API_ENDPOINT:http://127.0.0.1:11500/v1/chat/completions}
+      api-key: ${LOCAL_LLM_API_KEY:}
+      model: ${LOCAL_LLM_MODEL:qwen-local}
+      max-tokens: ${LOCAL_LLM_MAX_TOKENS:8192}
+      max-attempts: ${LOCAL_LLM_MAX_ATTEMPTS:3}
+      retry-delay-ms: ${LOCAL_LLM_RETRY_DELAY_MS:150}
+      connect-timeout-ms: ${LOCAL_LLM_CONNECT_TIMEOUT_MS:3000}
+      read-timeout-ms: ${LOCAL_LLM_READ_TIMEOUT_MS:120000}
+    spark:
+      endpoint: ${SPARK_API_ENDPOINT:}
+      api-key: ${SPARK_API_KEY:}
+      model: ${SPARK_MODEL:4.0Ultra}
+      connect-timeout-ms: ${SPARK_CONNECT_TIMEOUT_MS:5000}
+      read-timeout-ms: ${SPARK_READ_TIMEOUT_MS:90000}
+    embedding:
+      endpoint: ${EMBEDDING_API_ENDPOINT:}
+      api-key: ${EMBEDDING_API_KEY:}
+      model: ${EMBEDDING_MODEL:bge-m3}
+      dimension: ${EMBEDDING_DIMENSION:1024}
+      connect-timeout-ms: ${EMBEDDING_CONNECT_TIMEOUT_MS:3000}
+      read-timeout-ms: ${EMBEDDING_READ_TIMEOUT_MS:60000}
+    qdrant:
+      endpoint: ${QDRANT_ENDPOINT:}
+      api-key: ${QDRANT_API_KEY:}
+      collection: ${QDRANT_COLLECTION:zhigang_authorized_evidence}

@@ -1,0 +1,25 @@
+{
+  "version": "jd-skill-policy-v2",
+  "literals": "6G安全|AB实验|ACK|AI Agent|AI HUB|AI4DB|AI原生数据平台|AI自动化运维|AWS Aurora|Airflow|Apache Iceberg|Argo|Axios|C#|C++|CCE|CI/CD|CSS3|CUDA|CW|Claude Code|Codex|Cursor|DB4AI|DDD|DNS安全|DVC|Dapr|Dask|Data Catalog|DeepSeek|Delta Lake|DevOps|DiskANN|Docker|Dubbo|ELK|ETL|Elasticsearch|Element Plus|Embedding|Explain|FAISS|FGSM|FastAPI|Flask|Flink|FusionInsight|GIS|GPU|GaussDB|Git|Git Flow|Grafana|HBase|HTAP|HTML5|Hadoop|Helm|Hibernate|Hive|Horovod|IPv6安全|IVFFlat|Istio|J2EE|JPA|JVM性能调优|JVM调优|Java|JavaScript|Jenkins|KServe|Kafka|Kubeflow|Kubernetes|Kustomize|LLMOps|LangChain|LangGraph|LayoutParser|Linux|Linux脚本|LlamaIndex|Logstash|MCP|MLOps|MLflow|MQTT|MVC|MaaS|Maven|MaxCompute|Milvus|MindSpore|MongoDB|MyBatis|MyBatis Plus|MySQL|Neon|Nginx|NoSQL|Node.js|NumPy|OSS|OceanBase|Oracle|PGD|PaddleOCR|Pandas|Pinia|PostgreSQL|Prometheus|Prompt Engineering|PyTorch|Python|Qdrant|RAG|RESTful API|RPC|RabbitMQ|Ray|React|Redis|Redis Cluster|RocketMQ|Rust|SCSS|SQL|SQL Server|SQL优化|SQL调优|Saga|Scikit-learn|Seata|Serverless|Service Mesh|Shell|Spark|Spring|Spring Boot|Spring Cloud|Spring Cloud Alibaba|Spring MVC|Supabase|TKE|TensorFlow|TensorFlow Serving|Text Generation Inference|TiDB|Tomcat|Transformer|Transwarp|TypeScript|UML|Vector DB|Vite|Vue 3|Vue Router|io_uring|Go|AI|人工智能|云原生|云原生安全|云原生数据库|元数据管理|内容安全|冷热分层|分布式事务|分布式架构|分布式系统|分布式计算|分布式调度|分布式锁|列存|列式格式|单元测试|压力测试|反射|后端开发|后门检测|向量数据库|向量检索|在线推理|基础模型|多模态|多线程|大数据|大数据平台|大语言模型|存储过程|存算分离|安全大模型|容器镜像扫描|对抗攻击|对抗训练|对象存储|对象存储分层|差分隐私|并发编程|异常检测|强化学习|微服务|性能测试|性能调优|接口开发|接口测试|接口调用|推荐算法|数据Agent|数据仓库|数据压缩|数据可视化|数据安全|数据安全管理|数据库自调优|数据库设计|数据库连接|数据建模|数据标准管理|数据标注|数据治理|数据流水线|数据湖|数据版本控制|数据模型|数据管线|数据脱敏|数据质量监控|数据质量管理|数据采集|数据平台|数据存储|数据清洗|文本分析|时序数据库|时间序列预测|机器召回模型|机器学习|模型即服务|模型安全|模型微调|模型推理|模型管理|模型蒸馏|模型训练平台|模型评测|模型鲁棒性|注解|测试开发|深度学习|混沌工程|渗透测试|湖仓一体|物联网|知识图谱|禅道|移动通信网络安全|窗口函数|算法工程|算力网络安全|线程池|统计分析|缓存策略|网络与信息安全|网络安全攻防|自动化测试|自然语言处理|语义检索|调度引擎|路由安全|边缘计算|运筹优化|遥感|集成测试|非关系型数据库|领域建模|高可用|高并发",
+  "aliases": {
+    "大语言模型": ["大模型", "LLM", "大型语言模型"],
+    "AI Agent": ["智能体", "Agentic", "Agent"],
+    "模型微调": ["微调", "SFT", "Fine-tuning", "Fine tuning"],
+    "自然语言处理": ["NLP"],
+    "Prompt Engineering": ["提示词工程", "Prompt工程"],
+    "Kubernetes": ["K8s"],
+    "强化学习": ["RLHF"],
+    "推荐算法": ["推荐系统"],
+    "JavaScript": ["JS"],
+    "Spring": ["Spring Framework"],
+    "Spring MVC": ["SpringMVC"],
+    "MyBatis Plus": ["MyBatis-Plus"],
+    "Vue 3": ["Vue3"],
+    "RESTful API": ["REST API"],
+    "Transformer": ["Transformers"],
+    "多智能体": ["Multi-Agent", "Multi Agent"]
+  },
+  "contextual": ["AI", "AI Agent", "Go", "SQL", "算法工程"],
+  "supplemental": ["Go"],
+  "blocked": ["Android", "C", "DeepSpeed", "MPI", "Megatron", "Objective-C", "Swift", "TCP/IP", "Triton", "ZeRO", "iOS", "vLLM", "平台开发", "数据开发", "状态机", "网络安全", "面向对象"]
+}

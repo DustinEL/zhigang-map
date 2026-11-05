@@ -1,0 +1,43 @@
+{
+  "name": "zhigang-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.config.ts --host 127.0.0.1",
+    "build": "vue-tsc -b && vite --config vite.config.ts build",
+    "snapshot:build": "node scripts/build-frozen-snapshot.mjs",
+    "snapshot:export-live": "node scripts/export-live-snapshot.mjs",
+    "snapshot:sanitize": "node scripts/sanitize-frozen-snapshot.mjs",
+    "snapshot:validate": "node scripts/validate-frozen-snapshot.mjs",
+    "snapshot:report": "node scripts/validate-frozen-snapshot.mjs public/data/current.json --write-report",
+    "snapshot:reconcile": "node scripts/reconcile-live-snapshot.mjs",
+    "scan:static": "node scripts/scan-static-sensitive.mjs",
+    "scan:source": "node scripts/scan-static-sensitive.mjs src",
+    "build:static": "npm run snapshot:validate && vue-tsc -b && vite --config vite.config.ts build --mode static-demo && npm run scan:static",
+    "test": "node --test --experimental-strip-types tests/*.test.ts",
+    "test:coverage": "vitest run --config vitest.config.ts --coverage",
+    "test:e2e": "playwright test",
+    "preview": "vite --config vite.config.ts preview --host 127.0.0.1",
+    "preview:static": "vite --config vite.config.ts preview --host 127.0.0.1 --mode static-demo",
+    "type-check": "vue-tsc -b"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.7.7",
+    "echarts": "^5.5.1",
+    "element-plus": "^2.14.2",
+    "pinia": "^2.2.6",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.9",
+    "vue-tsc": "^2.1.10"
+  }
+}

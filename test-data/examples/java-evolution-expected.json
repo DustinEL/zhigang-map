@@ -1,0 +1,13 @@
+{
+  "role": "Java 开发工程师",
+  "roleCode": "JAVA_ENGINEER",
+  "baselineWindow": "2026-03-01 至 2026-05-31",
+  "currentWindow": "2026-06-01 至 2026-08-31",
+  "sampleControl": "国聘公开招聘职位；全国；全职级；独立企业去重",
+  "baseline": { "documents": 18, "companies": 13, "sources": 1 },
+  "current": { "documents": 24, "companies": 18, "sources": 1 },
+  "conclusionLevel": "SIGNAL_ONLY",
+  "publicationAllowed": false,
+  "reason": "技能需求率存在方向性观察信号，但 Newcombe 95% 比例差区间未排除 0。",
+  "evidenceRequirement": "每个有出现记录的技能保留基线/当前窗口原文、企业、来源、发布日期和 UTF-16 偏移。"
+}

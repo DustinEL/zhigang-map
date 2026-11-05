@@ -1,0 +1,23 @@
+[Unit]
+Description=Zhigang Map Spring Boot Backend
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www
+Group=www
+WorkingDirectory=/opt/zhigangmap/current
+EnvironmentFile=/etc/zhigangmap/zhigang.env
+ExecStart=/usr/bin/java -Xms64m -Xmx224m -XX:MaxMetaspaceSize=128m -XX:MaxDirectMemorySize=32m -XX:+UseSerialGC -jar /opt/zhigangmap/current/backend/zhigang-backend.jar
+Restart=always
+RestartSec=5
+SuccessExitStatus=143
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/zhigangmap
+
+[Install]
+WantedBy=multi-user.target

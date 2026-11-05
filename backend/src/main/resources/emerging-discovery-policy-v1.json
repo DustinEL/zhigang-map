@@ -1,0 +1,35 @@
+{
+  "version": "emerging-discovery-v1.2.2",
+  "semanticProfileVersion": "reviewed-title-responsibility-skill-equal-v2",
+  "calibrationDataset": "jd-corpus-development-validation-v1",
+  "algorithm": "logistic-regression",
+  "intercept": -3.15,
+  "weights": {
+    "companySupport": 1.05,
+    "sourceSupport": 0.75,
+    "windowGrowth": 0.60,
+    "titleNovelty": 1.20,
+    "responsibilityDifference": 1.00,
+    "skillCombinationDifference": 0.85
+  },
+  "candidateThreshold": 0.58,
+  "publishThreshold": 0.68,
+  "existingRoleSimilarityThreshold": 0.88,
+  "candidateGate": {
+    "minimumDocuments": 5,
+    "minimumCompanies": 2,
+    "minimumSources": 2,
+    "minimumMedianProbability": 0.60
+  },
+  "publishGate": {
+    "minimumDocuments": 8,
+    "minimumCompanies": 5,
+    "minimumSources": 2,
+    "minimumCompaniesPerWindow": 2
+  },
+  "clustering": {
+    "minimumClusterSize": 5,
+    "minimumSamples": 3
+  },
+  "timeWindowDays": 90
+}

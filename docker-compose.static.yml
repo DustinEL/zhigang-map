@@ -1,0 +1,8 @@
+services:
+  static-demo:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.static
+    ports:
+      - "8088:80"
+    restart: unless-stopped

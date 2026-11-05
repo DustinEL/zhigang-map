@@ -1,0 +1,63 @@
+# ===== Secrets / local configuration =====
+.env
+.env.*
+!.env.example
+!**/.env.example
+!**/.env.*.example
+cookies.txt
+*.pem
+!collector/jobonline-sm2-public.pem
+*.key
+*.p12
+*.jks
+collector/sources.local.json
+collector/inbox/
+deploy/zhigang.env
+
+# ===== Models / large local artifacts =====
+.models/
+*.gguf
+*.safetensors
+*.bin
+*.onnx
+
+# ===== Frontend =====
+frontend/node_modules/
+frontend/dist/
+frontend/dist-static/
+frontend/*.tsbuildinfo
+frontend/playwright-report/
+frontend/test-results/
+frontend/artifacts/
+frontend/.playwright-cli/
+frontend/materials/
+frontend/.env.local
+frontend/.env.production
+
+# ===== Backend =====
+backend/target/
+backend/.env.local
+
+# ===== Deployment / release artifacts =====
+deploy/package/
+deploy/releases/
+deploy/static-releases/
+output/
+logs/
+
+# ===== Local databases / backups / private evaluation data =====
+database/backups/
+database/competition/
+database/mysql-data/
+test-data/matching/
+test-data/evaluation/
+test-data/jd-corpus*/
+test-data/resume-*/
+test-data/jd-extraction/
+test-data/jd-corpus*.jsonl
+
+# ===== IDE / OS =====
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

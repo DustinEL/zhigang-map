@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "role-capability-v2.1",
+  "cards": [
+    {
+      "roleId": 2,
+      "roleCode": "JAVA_ENGINEER",
+      "roleName": "Java 开发工程师",
+      "version": "java-v2.1",
+      "coreCapabilities": [
+        {"id": "language", "alternatives": ["Java"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "backend", "alternatives": ["Spring Boot", "Spring", "MyBatis", "后端开发"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "data", "alternatives": ["MySQL", "PostgreSQL", "Redis", "SQL"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": false},
+        {"id": "engineering", "alternatives": ["Linux", "Docker", "CI/CD"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": false}
+      ],
+      "transferableSkills": ["TypeScript", "Go", "Python"],
+      "bonusSkills": ["Kubernetes", "Kafka", "Nginx"],
+      "decisionPolicy": {"nearAnchorGroupIds": ["language", "backend"], "nearRequiredAllGroupIds": ["language"], "nearMinimumProjectRelevance": 0.25, "readyMinimumCoreCoverage": 0.75, "readyMinimumProjectRelevance": 0.25, "readyMaximumBlockingGaps": 0, "readyMaximumBlockingReadyShortfall": 0, "nearMaximumBlockingGaps": 1},
+      "sourceReferences": ["real-jd-pilot:role-2", "match-rubric-v2"],
+      "reviewerIds": ["engineering-baseline"],
+      "reviewStatus": "INDEPENDENT_REVIEW_REQUIRED"
+    },
+    {
+      "roleId": 3,
+      "roleCode": "AI_AGENT_ENGINEER",
+      "roleName": "AI Agent 开发工程师",
+      "version": "agent-v2.1",
+      "coreCapabilities": [
+        {"id": "language", "alternatives": ["Python", "Java", "TypeScript"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "llm", "alternatives": ["LLM", "大语言模型", "Qwen", "通义千问", "本地模型", "LLM API", "OpenAI API", "GPT-2", "GPT-3", "GPT-4", "OpenAI", "Claude", "DeepSeek", "Gemini"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "agent", "alternatives": ["AI Agent", "LangChain", "LangGraph", "CrewAI", "AutoGen", "多Agent", "MCP", "工具调用", "聊天机器人"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "retrieval", "alternatives": ["RAG", "向量数据库", "Embedding"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": false},
+        {"id": "engineering", "alternatives": ["后端开发", "Docker", "Linux"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": false}
+      ],
+      "transferableSkills": ["Prompt Engineering", "模型评测"],
+      "bonusSkills": ["Redis", "权限控制"],
+      "decisionPolicy": {"nearAnchorGroupIds": ["agent", "retrieval"], "readyMinimumCoreCoverage": 0.60, "readyMinimumProjectRelevance": 0.50, "readyMaximumBlockingGaps": 0, "readyMaximumBlockingReadyShortfall": 0, "nearMaximumBlockingGaps": 1},
+      "sourceReferences": ["real-jd-pilot:role-3", "match-rubric-v2"],
+      "reviewerIds": ["engineering-baseline"],
+      "reviewStatus": "INDEPENDENT_REVIEW_REQUIRED"
+    },
+    {
+      "roleId": 4,
+      "roleCode": "AI_APP_BACKEND_ENGINEER",
+      "roleName": "AI 应用后端工程师",
+      "version": "ai-backend-v2.1",
+      "coreCapabilities": [
+        {"id": "language", "alternatives": ["Java", "Python", "TypeScript", "Go", "C#"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": true},
+        {"id": "backend", "alternatives": ["Spring Boot", "Spring", "FastAPI", "Flask", "Django", "Django REST Framework", "Node.js", "Express", "NestJS", "GraphQL", "REST API", "API 开发", "后端开发", "Laravel", "ASP.NET", "ASP.NET Core"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": true},
+        {"id": "ai-application", "alternatives": ["LLM", "大语言模型", "LLM API", "OpenAI API", "GPT-2", "GPT-3", "GPT-4", "OpenAI", "Claude", "DeepSeek", "Gemini", "RAG", "AI Agent", "LangChain", "LangGraph", "MCP", "工具调用", "vLLM"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "data", "alternatives": ["MySQL", "Redis", "SQL"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": false},
+        {"id": "operations", "alternatives": ["Docker", "Linux", "CI/CD"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": false}
+      ],
+      "transferableSkills": ["C++", "分布式系统", "Vue"],
+      "bonusSkills": ["权限控制", "Prometheus"],
+      "decisionPolicy": {"nearAnchorGroupIds": ["ai-application", "backend"], "nearRequiredAllGroupIds": ["backend", "ai-application"], "readyRequiredAllGroupIds": ["backend", "ai-application"], "readyMinimumCoreCoverage": 0.60, "readyMinimumProjectRelevance": 0.50, "readyMaximumBlockingGaps": 0, "readyMaximumBlockingReadyShortfall": 0, "nearMaximumBlockingGaps": 1},
+      "sourceReferences": ["real-jd-pilot:role-4", "match-rubric-v2"],
+      "reviewerIds": ["engineering-baseline"],
+      "reviewStatus": "INDEPENDENT_REVIEW_REQUIRED"
+    },
+    {
+      "roleId": 5,
+      "roleCode": "LLMOPS_ENGINEER",
+      "roleName": "LLMOps / 模型服务工程师",
+      "version": "llmops-v2.1",
+      "coreCapabilities": [
+        {"id": "systems", "alternatives": ["Linux", "Shell", "Bash"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "containers", "alternatives": ["Docker", "Kubernetes"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "model-serving", "alternatives": ["vLLM", "Triton", "KServe", "llama.cpp", "llama-server", "TensorFlow Serving", "LLMOps", "MLOps", "模型服务", "模型部署", "在线推理", "模型即服务"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "automation", "alternatives": ["CI/CD", "Python", "Shell"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": false},
+        {"id": "observability", "alternatives": ["Prometheus", "模型评测"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": false}
+      ],
+      "transferableSkills": ["分布式系统", "C++", "高并发"],
+      "bonusSkills": ["权限控制", "GPU"],
+      "decisionPolicy": {"nearAnchorGroupIds": ["model-serving", "systems", "containers"], "nearRequiredAllGroupIds": ["model-serving"], "nearMinimumProjectRelevance": 0.20, "readyMinimumCoreCoverage": 0.75, "readyMinimumProjectRelevance": 0.50, "readyMaximumBlockingGaps": 0, "readyMaximumBlockingReadyShortfall": 0, "nearMaximumBlockingGaps": 1},
+      "sourceReferences": ["real-jd-pilot:role-5", "match-rubric-v2"],
+      "reviewerIds": ["engineering-baseline"],
+      "reviewStatus": "INDEPENDENT_REVIEW_REQUIRED"
+    },
+    {
+      "roleId": 7,
+      "roleCode": "LLM_APP_ENGINEER",
+      "roleName": "大模型应用开发工程师",
+      "version": "llm-app-v2.1",
+      "coreCapabilities": [
+        {"id": "language", "alternatives": ["Python", "Java", "TypeScript"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "llm", "alternatives": ["LLM", "大语言模型", "Qwen", "通义千问", "本地模型", "LLM API", "OpenAI API", "GPT-2", "GPT-3", "GPT-4", "OpenAI", "Claude", "DeepSeek", "Gemini"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "retrieval", "alternatives": ["RAG", "向量数据库", "Embedding"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": false},
+        {"id": "interaction", "alternatives": ["AI Agent", "Prompt Engineering", "LangChain", "LangGraph", "CrewAI", "AutoGen", "MCP", "工具调用", "聊天机器人"], "nearEvidenceLevel": 2, "readyEvidenceLevel": 2, "blocking": false},
+        {"id": "engineering", "alternatives": ["后端开发", "Docker", "Linux"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": false}
+      ],
+      "transferableSkills": ["模型评测", "Vue", "Spring Boot"],
+      "bonusSkills": ["LangChain", "权限控制"],
+      "decisionPolicy": {"nearAnchorGroupIds": ["retrieval", "interaction", "llm"], "nearRequiredAnyGroupIds": ["retrieval", "interaction"], "readyRequiredAllGroupIds": ["llm"], "readyRequiredAnyGroupIds": ["retrieval", "interaction"], "readyMinimumCoreCoverage": 0.60, "readyMinimumProjectRelevance": 0.50, "readyMaximumBlockingGaps": 0, "readyMaximumBlockingReadyShortfall": 0, "nearMaximumBlockingGaps": 1},
+      "sourceReferences": ["real-jd-pilot:role-7", "match-rubric-v2"],
+      "reviewerIds": ["engineering-baseline"],
+      "reviewStatus": "INDEPENDENT_REVIEW_REQUIRED"
+    },
+    {
+      "roleId": 9,
+      "roleCode": "AI_DATA_ENGINEER",
+      "roleName": "AI 数据工程师",
+      "version": "ai-data-v2.1",
+      "coreCapabilities": [
+        {"id": "language", "alternatives": ["Python"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "query", "alternatives": ["SQL", "MySQL", "PostgreSQL"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "pipeline", "alternatives": ["ETL", "Airflow", "Kafka", "dbt", "Dagster", "Spark", "PySpark", "Flink", "Hadoop", "Hive", "数据管道", "数据中台", "采集管道", "批处理", "数据摄取"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "processing", "alternatives": ["Pandas", "NumPy", "PySpark", "CSV", "数据清洗", "数据集构建", "特征工程", "数据采集", "数据分析", "EDA", "时间序列预测", "时序数据"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "storage", "alternatives": ["数据仓库", "HDF5", "NetCDF"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": false}
+      ],
+      "transferableSkills": ["分布式系统", "物联网", "传感器"],
+      "bonusSkills": ["PyTorch", "GPU", "Redis"],
+      "decisionPolicy": {"nearAnchorGroupIds": ["pipeline", "processing", "query"], "nearRequiredAnyGroupIds": ["pipeline", "processing"], "readyMinimumCoreCoverage": 0.60, "readyMinimumProjectRelevance": 0.40, "readyMaximumBlockingGaps": 0, "readyMaximumBlockingReadyShortfall": 0, "nearMaximumBlockingGaps": 1},
+      "sourceReferences": ["real-jd-pilot:role-9", "match-rubric-v2"],
+      "reviewerIds": ["engineering-baseline"],
+      "reviewStatus": "INDEPENDENT_REVIEW_REQUIRED"
+    },
+    {
+      "roleId": 12,
+      "roleCode": "AI_SECURITY_TEST_ENGINEER",
+      "roleName": "AI 安全测试工程师",
+      "version": "ai-security-v2.1",
+      "coreCapabilities": [
+        {"id": "testing", "alternatives": ["安全测试", "渗透测试", "模型评测", "安全评估", "Guardrails", "pytest", "OWASP", "OWASP Top 10", "SQLi", "XSS", "IDOR"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "threat", "alternatives": ["提示注入", "Prompt Injection", "Prompt Injection Testing", "数据泄露", "权限控制", "越权", "幻觉", "漏洞"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "ai", "alternatives": ["LLM", "大语言模型", "GPT-2", "GPT-3", "GPT-4", "OpenAI", "Claude", "DeepSeek", "Gemini", "AI Agent", "RAG"], "nearEvidenceLevel": 2, "readyEvidenceLevel": 2, "blocking": false},
+        {"id": "engineering", "alternatives": ["Python", "Linux"], "nearEvidenceLevel": 2, "readyEvidenceLevel": 2, "blocking": false},
+        {"id": "network", "alternatives": ["网络安全", "Wireshark", "TCP/IP"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 1, "blocking": false}
+      ],
+      "transferableSkills": ["测试结果", "Docker", "分布式系统"],
+      "bonusSkills": ["WebRTC", "Socket"],
+      "decisionPolicy": {"nearAnchorGroupIds": ["testing", "threat"], "nearMinimumProjectRelevance": 0.20, "readyMinimumCoreCoverage": 0.75, "readyMinimumProjectRelevance": 0.50, "readyMaximumBlockingGaps": 0, "readyMaximumBlockingReadyShortfall": 0, "nearMaximumBlockingGaps": 1},
+      "sourceReferences": ["real-jd-pilot:role-12", "match-rubric-v2"],
+      "reviewerIds": ["engineering-baseline"],
+      "reviewStatus": "INDEPENDENT_REVIEW_REQUIRED"
+    },
+    {
+      "roleId": 13,
+      "roleCode": "LLM_INFERENCE_ACCELERATION_ENGINEER",
+      "roleName": "大模型推理加速工程师",
+      "version": "inference-v2.1",
+      "coreCapabilities": [
+        {"id": "language", "alternatives": ["C++", "Python"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "serving", "alternatives": ["vLLM", "Triton", "TensorRT", "CANN"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "compute", "alternatives": ["GPU", "CUDA"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": true},
+        {"id": "optimization", "alternatives": ["量化", "DeepSpeed", "Megatron"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": false},
+        {"id": "systems", "alternatives": ["Linux", "分布式系统"], "nearEvidenceLevel": 1, "readyEvidenceLevel": 2, "blocking": false}
+      ],
+      "transferableSkills": ["音视频", "高并发", "C"],
+      "bonusSkills": ["PyTorch", "模型评测"],
+      "decisionPolicy": {"nearAnchorGroupIds": ["serving", "compute"], "nearRequiredAnyGroupIds": ["serving", "compute"], "readyMinimumCoreCoverage": 0.75, "readyMinimumProjectRelevance": 0.50, "readyMaximumBlockingGaps": 0, "readyMaximumBlockingReadyShortfall": 0, "nearMaximumBlockingGaps": 1},
+      "sourceReferences": ["real-jd-pilot:role-13", "match-rubric-v2"],
+      "reviewerIds": ["engineering-baseline"],
+      "reviewStatus": "INDEPENDENT_REVIEW_REQUIRED"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "zhigang-authorized-collector",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:jd-corpus": "node build-jd-corpus.mjs --output ../test-data/jd-corpus",
+    "export:jd-review-cn": "node export-chinese-review.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "validate:jd-corpus": "node validate-jd-corpus.mjs"
+  }
+}

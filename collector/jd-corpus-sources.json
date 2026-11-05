@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "3.0.0",
+  "requirements": {
+    "candidateMinimum": 120,
+    "structurallyQualifiedMinimum": 100,
+    "companyMinimum": 30,
+    "independentSourceMinimum": 3
+  },
+  "selectionPolicy": {
+    "description": "仅采集中国大陆企业官网或中国公共招聘平台公开展示、且能匹配网站十二个目标岗位之一的当前中文计算机 JD；来源、企业和工作地点必须均为中国大陆，不使用登录态、不绕过验证码、不翻译国外 JD。",
+    "technicalPattern": "AI\\s*Agent|Agent|智能体|大模型|LLM|AIGC|RAG|检索增强|知识库|向量|Embedding|Java|Spring\\s*Boot|Spring\\s*Cloud|后端|后台|服务端|模型服务|模型部署|模型推理|推理服务|LLMOps|MLOps|AI\\s*Infra|人工智能平台|AI平台|数据工程|大数据开发|知识图谱|知识工程|本体|搜索|检索|召回|重排|推荐算法|模型评测|大模型评测|AI测试|AI安全|大模型安全|红队|提示注入|Docker|Kubernetes",
+    "computerTitlePattern": "开发|研发|工程师|架构师|算法|测试|运维|平台|数据|Java|后端|后台|服务端|搜索|检索|推荐|召回|重排|知识|模型|大模型|LLM|AI|人工智能|Agent|智能体|RAG|Infra|安全",
+    "hardExcludedTitlePattern": "运营|销售|客服|营销|市场|行政|人力|HRBP|招聘(?:专员|经理|顾问)|会计|财务(?:专员|经理|主管|会计|岗)|教师|老师|法律|律师|采购|生产(?:操作|管理)?|操作员|工艺|机械|土建|医药|旅游|酒店|保险|商务|策划|编辑|内容审核|主播|设计师|美术|产品经理|产品负责人|产品专家|技术产品|AI产品(?:-|经理|负责人|专家|数据分析|运营)|大模型产品(?:-|经理|负责人|专家|数据分析|运营)|项目经理|咨询经理|事务经理|售前|解决方案|顾问|管培|管理岗|厨师|医师|护士|物流|供应链|渠道|品类|招商主管|商业化|游戏|手游|端游|工作室|客户端|前端|UE[45]?|Unity|自动驾驶|光学|电气|通信|5G|6G|网络工程师|网络.*研发",
+    "targetRoleRules": [
+      {
+        "code": "AI_AGENT_ENGINEER",
+        "name": "AI Agent 开发工程师",
+        "strongTitlePattern": "(?:AI\\s*Agent|Agent|智能体).*(?:开发|研发|工程师|架构|Engineer|Builder)|(?:开发|研发|工程师|架构|Engineer|Builder).*(?:AI\\s*Agent|Agent|智能体)",
+        "titlePattern": "开发|研发|工程师|架构|算法|平台|Engineer|Builder",
+        "textPattern": "(?:AI\\s*Agent|智能体|Agent)[\\s\\S]{0,1200}(?:工具调用|Function\\s*Calling|多智能体|任务规划|记忆机制|工作流编排)|(?:工具调用|Function\\s*Calling|多智能体|任务规划|记忆机制|工作流编排)[\\s\\S]{0,1200}(?:AI\\s*Agent|智能体|Agent)"
+      },
+      {
+        "code": "JAVA_ENGINEER",
+        "name": "Java 开发工程师",
+        "strongTitlePattern": "Java.*(?:开发|研发|工程师|架构)|(?:开发|研发|工程师|架构).*Java",
+        "titlePattern": "Java|后端|后台|服务端|软件开发|软件工程|全栈",
+        "textPattern": "Java|Spring\\s*Boot|Spring\\s*Cloud|MyBatis|JVM"
+      },
+      {
+        "code": "RAG_APP_ENGINEER",
+        "name": "RAG 应用开发工程师",
+        "strongTitlePattern": "RAG.*(?:开发|研发|工程师|架构)|(?:开发|研发|工程师|架构).*RAG|知识库.*(?:开发|工程师)|检索增强.*(?:开发|工程师)",
+        "titlePattern": "RAG|检索|搜索|知识库|问答|向量|召回|重排|推荐|AI应用|大模型应用|算法工程师|后端|后台|服务端|应用开发|开发工程师",
+        "textPattern": "RAG|检索增强|知识库问答|向量数据库|Embedding|召回|重排"
+      },
+      {
+        "code": "AI_APP_BACKEND_ENGINEER",
+        "name": "AI 应用后端工程师",
+        "strongTitlePattern": "(?:AI|人工智能|大模型|LLM).*(?:后端|后台|服务端).*(?:开发|工程师)?|(?:后端|后台|服务端).*(?:AI|人工智能|大模型|LLM)",
+        "titlePattern": "后端|后台|服务端|应用开发|平台开发|接口开发",
+        "textPattern": "AI|人工智能|大模型|LLM|RAG|Agent|智能体|模型服务"
+      },
+      {
+        "code": "LLMOPS_ENGINEER",
+        "name": "LLMOps / 模型服务工程师",
+        "strongTitlePattern": "LLMOps|MLOps|AI\\s*Infra|大模型\\s*Infra|模型服务.*(?:工程师|开发|研发)|模型部署.*(?:工程师|开发|研发)|推理.*(?:工程师|开发|研发)",
+        "titlePattern": "模型服务|模型部署|推理|Infra|基础设施|平台工程|模型工程|运维|工程化|高性能计算|训练框架|推理框架",
+        "textPattern": "(?=[\\s\\S]*(?:LLMOps|MLOps|大模型|LLM|模型服务|模型部署|推理服务))(?=[\\s\\S]*(?:模型部署|推理服务|Kubernetes|Docker|模型网关|监控|运维|工程化|训练框架|推理框架))"
+      },
+      {
+        "code": "LLM_EVALUATION_ENGINEER",
+        "name": "大模型评测工程师",
+        "strongTitlePattern": "(?:大模型|LLM|Agent|RAG|AI).*(?:评测|测试|质量)|(?:评测|测试|质量).*(?:大模型|LLM|Agent|RAG|AI)",
+        "titlePattern": "评测|测试|质量|红队",
+        "textPattern": "(?:大模型|LLM|Agent|RAG|模型)[\\s\\S]{0,1200}(?:评测|测试|质量|指标|评测集|数据集)|(?:评测|测试|质量|指标|评测集|数据集)[\\s\\S]{0,1200}(?:大模型|LLM|Agent|RAG|模型)",
+        "excludedTitlePattern": "产品|运营|管理|社区"
+      },
+      {
+        "code": "LLM_APP_ENGINEER",
+        "name": "大模型应用开发工程师",
+        "strongTitlePattern": "(?:大模型|LLM|AIGC|AI应用).*(?:应用开发|开发工程师|研发工程师|应用工程师)|(?:应用开发|开发工程师|研发工程师|应用工程师).*(?:大模型|LLM|AIGC|AI)",
+        "titlePattern": "大模型应用|LLM应用|AIGC应用|AI应用|AI开发|AI工程师|人工智能.*(?:开发|研发|工程师)|智能应用|生成式AI",
+        "textPattern": "大模型|LLM|AIGC|生成式人工智能|模型调用|Prompt|RAG|Agent",
+        "excludedTitlePattern": "训练|预训练|后训练|基座|框架|Infra|推理|研究员|算法研究"
+      },
+      {
+        "code": "AI_PLATFORM_ENGINEER",
+        "name": "AI 平台开发工程师",
+        "strongTitlePattern": "(?:AI|人工智能|大模型|模型).*(?:平台|Infra|基础架构|引擎).*(?:开发|研发|工程师|架构|Builder)?|(?:平台|Infra|基础架构|引擎).*(?:AI|人工智能|大模型|模型)",
+        "titlePattern": "AI平台|人工智能平台|模型平台|Infra|基础架构|智能引擎|训练平台|推理平台",
+        "textPattern": "AI|人工智能|大模型|LLM|模型服务|训练平台|推理平台"
+      },
+      {
+        "code": "AI_DATA_ENGINEER",
+        "name": "AI 数据工程师",
+        "strongTitlePattern": "(?:AI|人工智能|大模型|训练).*(?:数据|语料).*(?:开发|工程师|算法|平台)?|(?:数据|语料).*(?:AI|人工智能|大模型|训练)",
+        "titlePattern": "数据工程师|数据开发|数据平台|大数据开发|数据算法|语料",
+        "textPattern": "AI|人工智能|大模型|LLM|训练数据|语料|数据工程|数据处理"
+      },
+      {
+        "code": "KNOWLEDGE_ENGINEER",
+        "name": "知识工程师",
+        "strongTitlePattern": "知识图谱|知识工程|本体工程|Ontology",
+        "titlePattern": "知识|图谱|本体|数据",
+        "textPattern": "知识图谱|知识工程|本体|Ontology|实体关系|图数据库"
+      },
+      {
+        "code": "VECTOR_RETRIEVAL_ENGINEER",
+        "name": "向量检索工程师",
+        "strongTitlePattern": "向量检索|检索.*(?:开发|研发|工程师|架构)|搜索.*(?:开发|研发|工程师|架构)|召回.*(?:工程师|算法)|重排.*(?:工程师|算法)",
+        "titlePattern": "向量|检索|搜索|召回|重排|推荐",
+        "textPattern": "向量|Embedding|检索|搜索|召回|重排|推荐算法"
+      },
+      {
+        "code": "AI_SECURITY_TEST_ENGINEER",
+        "name": "AI 安全测试工程师",
+        "strongTitlePattern": "(?:AI|人工智能|大模型|模型).*(?:安全|红队|对抗测试)|(?:安全|红队|对抗测试).*(?:AI|人工智能|大模型|模型)",
+        "titlePattern": "安全|测试|红队|质量",
+        "textPattern": "AI安全|人工智能安全|大模型安全|LLM安全|提示注入|越狱|对抗样本|对抗测试|模型安全|安全评测"
+      }
+    ],
+    "minimumTextLength": 200,
+    "minimumChineseCharacters": 80
+  },
+  "sources": [
+    {
+      "sourceId": "iguopin-current-cn",
+      "sourceName": "国聘公开招聘职位",
+      "sourcePlatform": "国聘",
+      "sourceFamily": "CHINA_PUBLIC_RECRUITMENT_PLATFORM",
+      "sourceCountry": "CN",
+      "adapter": "IGUOPIN",
+      "sourceTier": "TIER_1",
+      "sourceType": "中国公开招聘平台 JD",
+      "entryUrl": "https://gp-api.iguopin.com/api/jobs/v1/recom-job",
+      "listingUrl": "https://www.iguopin.com/job",
+      "licenseStatus": "PUBLIC_WEB_REVIEW_REQUIRED",
+      "licenseUrl": "https://www.iguopin.com/job",
+      "licenseNote": "公开职位页面无需登录即可浏览；仅冻结有限字段用于比赛人工审核，提交前仍需复核平台条款。",
+      "searchKeywords": [
+        "Java",
+        "后端开发",
+        "AI Agent",
+        "大模型应用",
+        "RAG",
+        "模型服务",
+        "AI平台",
+        "数据工程师",
+        "知识图谱",
+        "搜索算法",
+        "模型评测",
+        "AI安全"
+      ],
+      "pageCountPerKeyword": 6,
+      "maximumRecords": 260,
+      "maximumRecordsPerCompany": 10
+    },
+    {
+      "sourceId": "meituan-official-current-cn",
+      "sourceName": "美团招聘官网社会招聘",
+      "sourcePlatform": "美团招聘官网",
+      "sourceFamily": "CHINA_ENTERPRISE_OFFICIAL_CAREERS",
+      "sourceCountry": "CN",
+      "adapter": "MEITUAN",
+      "sourceTier": "TIER_1",
+      "sourceType": "中国企业招聘官网 JD",
+      "entryUrl": "https://zhaopin.meituan.com/api/official/job/getJobList",
+      "listingUrl": "https://zhaopin.meituan.com/web/social",
+      "licenseStatus": "PUBLIC_OFFICIAL_SITE_REVIEW_REQUIRED",
+      "licenseUrl": "https://zhaopin.meituan.com/web/social",
+      "licenseNote": "美团招聘官网公开职位接口，无需登录；只作比赛数据审核，提交前复核官网条款。",
+      "pageCount": 4,
+      "maximumRecords": 120
+    },
+    {
+      "sourceId": "tencent-official-current-cn",
+      "sourceName": "腾讯招聘官网社会招聘",
+      "sourcePlatform": "腾讯招聘官网",
+      "sourceFamily": "CHINA_ENTERPRISE_OFFICIAL_CAREERS",
+      "sourceCountry": "CN",
+      "adapter": "TENCENT",
+      "sourceTier": "TIER_1",
+      "sourceType": "中国企业招聘官网 JD",
+      "companyName": "腾讯科技（深圳）有限公司",
+      "entryUrl": "https://careers.tencent.com/tencentcareer/api/post/Query",
+      "detailUrl": "https://careers.tencent.com/tencentcareer/api/post/ByPostId",
+      "listingUrl": "https://careers.tencent.com/search.html",
+      "licenseStatus": "PUBLIC_OFFICIAL_SITE_REVIEW_REQUIRED",
+      "licenseUrl": "https://careers.tencent.com/search.html",
+      "licenseNote": "腾讯招聘官网公开职位接口，无需登录；只作比赛数据审核，提交前复核官网条款。",
+      "pageCount": 12,
+      "pageSize": 100,
+      "maximumDetailRequests": 180,
+      "maximumRecords": 120
+    },
+    {
+      "sourceId": "baidu-official-current-cn",
+      "sourceName": "百度招聘官网校园招聘",
+      "sourcePlatform": "百度招聘官网",
+      "sourceFamily": "CHINA_ENTERPRISE_OFFICIAL_CAREERS",
+      "sourceCountry": "CN",
+      "adapter": "BAIDU",
+      "sourceTier": "TIER_1",
+      "sourceType": "中国企业招聘官网 JD",
+      "companyName": "北京百度网讯科技有限公司",
+      "entryUrl": "https://talent.baidu.com/jobs/list",
+      "detailBaseUrl": "https://talent.baidu.com/jobs/detail",
+      "listingUrl": "https://talent.baidu.com/jobs/list",
+      "recruitType": "GRADUATE",
+      "jobType": "校园招聘",
+      "licenseStatus": "PUBLIC_OFFICIAL_SITE_REVIEW_REQUIRED",
+      "licenseUrl": "https://talent.baidu.com/jobs/list",
+      "licenseNote": "百度招聘官网公开职位页面，无需登录；只作比赛数据审核，提交前复核官网条款。",
+      "maximumDetailRequests": 20,
+      "maximumRecords": 20
+    },
+    {
+      "sourceId": "ncss-current-cn",
+      "sourceName": "国家大学生就业服务平台职位",
+      "sourcePlatform": "国家大学生就业服务平台",
+      "sourceFamily": "CHINA_PUBLIC_EMPLOYMENT_SERVICE",
+      "sourceCountry": "CN",
+      "adapter": "NCSS",
+      "sourceTier": "TIER_1",
+      "sourceType": "中国公共就业服务平台 JD",
+      "entryUrl": "https://www.ncss.cn/student/jobs/jobslist/ajax/",
+      "listingUrl": "https://www.ncss.cn/student/jobs/index.html",
+      "licenseStatus": "PUBLIC_GOVERNMENT_PLATFORM_REVIEW_REQUIRED",
+      "licenseUrl": "https://www.ncss.cn/student/jobs/index.html",
+      "licenseNote": "教育部主管的公共就业服务平台公开职位，无需登录浏览；提交前仍需逐条核对和复核使用规则。",
+      "searchKeywords": [
+        "Java",
+        "后端开发",
+        "AI Agent",
+        "人工智能",
+        "大模型",
+        "RAG",
+        "数据工程师",
+        "大数据开发",
+        "知识图谱",
+        "搜索算法",
+        "软件测试",
+        "信息安全"
+      ],
+      "pageCountPerKeyword": 5,
+      "maximumDetailRequests": 240,
+      "maximumRecords": 140,
+      "maximumRecordsPerCompany": 6
+    }
+  ]
+}

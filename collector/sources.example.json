@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "2.0.0",
+  "sources": [
+    {
+      "sourceId": "replace-with-authorized-source",
+      "sourceName": "替换为已授权数据源",
+      "sourceTier": "TIER_2",
+      "adapter": "STRUCTURED_DATASET",
+      "timeScope": "CURRENT",
+      "entryUrl": "https://example.com/authorized-jobs.json",
+      "format": "json",
+      "licenseStatus": "REPLACE_WITH_DOCUMENTED_PERMISSION",
+      "licenseNote": "填写授权文件、开放接口条款或允许自动访问的公开说明",
+      "enabled": false
+    }
+  ]
+}

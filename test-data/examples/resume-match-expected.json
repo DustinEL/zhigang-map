@@ -1,0 +1,6 @@
+{
+  "targetRole": "RAG 应用开发工程师",
+  "requiredSections": ["hardGates", "readiness", "skillDetails", "adjacentRoles", "learningPlan"],
+  "requiresUserConfirmation": true,
+  "supportsVerificationAndRediagnosis": true
+}

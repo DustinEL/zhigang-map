@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run build:static",
+  "outputDirectory": "dist-static",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

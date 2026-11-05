@@ -1,0 +1,15 @@
+{
+  "version": "resume-match-logistic-v1.0",
+  "validationDatasetHash": "sha256:ccc95b1be504f57b598256d6db3f14ea27e4582ec4c56b5f04cb8e225399db76",
+  "calibrationSummary": "fixture-f1@0.60=1.000; brier=0.099; n=6; scope=smoke-fixture",
+  "hardGateEvidenceLevel": 2,
+  "hardGateScoreCap": 60.0,
+  "weights": {
+    "requiredSkills": 0.43,
+    "responsibilities": 0.24,
+    "bonusSkills": 0.08,
+    "proficiency": 0.13,
+    "scenarios": 0.07,
+    "certificates": 0.05
+  }
+}

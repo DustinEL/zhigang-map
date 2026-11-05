@@ -1,0 +1,14 @@
+{
+  "version": "role-evolution-v1.0",
+  "windowMonths": 3,
+  "minimumDocumentsPerWindow": 8,
+  "minimumCompaniesPerWindow": 8,
+  "minimumSourcesPerWindow": 1,
+  "minimumAbsoluteChange": 0.10,
+  "newSkillBaselineMaximumCompanies": 1,
+  "newSkillCurrentMinimumCompanies": 3,
+  "removalBaselineMinimumCompanies": 3,
+  "removalConsecutiveWindows": 2,
+  "evidenceLimitPerWindow": 5,
+  "confidenceZ": 1.959963984540054
+}

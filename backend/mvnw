@@ -1,0 +1,27 @@
+#!/bin/sh
+set -eu
+
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+wrapper_dir="$project_dir/.mvn/wrapper"
+wrapper_jar="$wrapper_dir/maven-wrapper.jar"
+wrapper_properties="$wrapper_dir/maven-wrapper.properties"
+
+if [ ! -f "$wrapper_jar" ]; then
+  cached_maven=$(find "${HOME}/.m2/wrapper/dists" -type f -path '*/bin/mvn' -print -quit 2>/dev/null || true)
+  if [ -n "$cached_maven" ]; then
+    exec "$cached_maven" "$@"
+  fi
+  wrapper_url=$(sed -n 's/^wrapperUrl=//p' "$wrapper_properties")
+  wrapper_url=${wrapper_url:-https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.3.4/maven-wrapper-3.3.4.jar}
+  if command -v curl >/dev/null 2>&1; then
+    curl -fsSL "$wrapper_url" -o "$wrapper_jar"
+  elif command -v wget >/dev/null 2>&1; then
+    wget -q "$wrapper_url" -O "$wrapper_jar"
+  else
+    echo "Maven Wrapper requires curl or wget to download its bootstrap jar." >&2
+    exit 1
+  fi
+fi
+
+java_executable=${JAVA_HOME:+$JAVA_HOME/bin/}java
+exec "$java_executable" -classpath "$wrapper_jar" "-Dmaven.multiModuleProjectDirectory=$project_dir" org.apache.maven.wrapper.MavenWrapperMain "$@"

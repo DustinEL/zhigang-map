@@ -1,0 +1,250 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-CHANGE_ME}
+      MYSQL_DATABASE: zhigang_map
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database/01_schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+      - ./database/02_seed_demo.sql:/docker-entrypoint-initdb.d/02_seed_demo.sql:ro
+      - ./database/03_real_data_pipeline.sql:/docker-entrypoint-initdb.d/03_real_data_pipeline.sql:ro
+      - ./database/04_review_triage.sql:/docker-entrypoint-initdb.d/04_review_triage.sql:ro
+      - ./database/05_emerging_discovery.sql:/docker-entrypoint-initdb.d/05_emerging_discovery.sql:ro
+      - ./database/06_emerging_query_discovery.sql:/docker-entrypoint-initdb.d/06_emerging_query_discovery.sql:ro
+      - ./database/07_role_evolution.sql:/docker-entrypoint-initdb.d/07_role_evolution.sql:ro
+      - ./database/08_p0_5_release_governance.sql:/docker-entrypoint-initdb.d/08_p0_5_release_governance.sql:ro
+      - ./database/09_p0_6_resume_match_verification.sql:/docker-entrypoint-initdb.d/09_p0_6_resume_match_verification.sql:ro
+      - ./database/10_confirmed_existing_roles.sql:/docker-entrypoint-initdb.d/10_confirmed_existing_roles.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-p${MYSQL_ROOT_PASSWORD:-CHANGE_ME}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    restart: always
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  bge-m3-model:
+    image: ${BGE_M3_RUNTIME_IMAGE:-ghcr.nju.edu.cn/ggml-org/llama.cpp@sha256:9aba728bae97dddac5af17a183303dc2f5aa6a52f3e0b098989130ccb674445a}
+    environment:
+      BGE_M3_MODEL_URL: ${BGE_M3_MODEL_URL:-https://modelscope.cn/models/gpustack/bge-m3-GGUF/resolve/master/bge-m3-Q4_K_M.gguf}
+      BGE_M3_MODEL_SHA256: ${BGE_M3_MODEL_SHA256:-6d39681b26c61279ac1f82db35a04a05009e94c415b51c858ff571489a82fc06}
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        set -eu
+        model=/models/bge-m3-Q4_K_M.gguf
+        if [ -f "$${model}" ] && echo "$${BGE_M3_MODEL_SHA256}  $${model}" | sha256sum -c -; then
+          exit 0
+        fi
+        rm -f "$${model}.part"
+        curl -L --fail --retry 5 --retry-delay 3 --connect-timeout 30 \
+          -o "$${model}.part" "$${BGE_M3_MODEL_URL}"
+        echo "$${BGE_M3_MODEL_SHA256}  $${model}.part" | sha256sum -c -
+        mv "$${model}.part" "$${model}"
+    volumes:
+      - ./.models:/models
+
+  bge-m3:
+    image: ${BGE_M3_GPU_RUNTIME_IMAGE:-ghcr.nju.edu.cn/ggml-org/llama.cpp:server-cuda}
+    restart: always
+    environment:
+      NVIDIA_DISABLE_REQUIRE: "1"
+      LD_LIBRARY_PATH: /usr/lib/x86_64-linux-gnu:/usr/local/cuda/compat:/usr/local/cuda/lib64
+    command:
+      - -m
+      - /models/bge-m3-Q4_K_M.gguf
+      - --embedding
+      - --pooling
+      - cls
+      - --alias
+      - bge-m3
+      - --ctx-size
+      - ${BGE_M3_CONTEXT_SIZE:-2048}
+      - --ubatch-size
+      - ${BGE_M3_UBATCH_SIZE:-2048}
+      - --threads
+      - ${BGE_M3_THREADS:-6}
+      - --threads-batch
+      - ${BGE_M3_THREADS:-6}
+      - --n-gpu-layers
+      - "999"
+      - --parallel
+      - "1"
+    ports:
+      - "11434:8080"
+    volumes:
+      - ./.models:/models:ro
+    depends_on:
+      bge-m3-model:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+
+  local-llm-model:
+    image: ${LOCAL_LLM_RUNTIME_IMAGE:-ghcr.nju.edu.cn/ggml-org/llama.cpp@sha256:9aba728bae97dddac5af17a183303dc2f5aa6a52f3e0b098989130ccb674445a}
+    environment:
+      LOCAL_LLM_MODEL_URL: ${LOCAL_LLM_MODEL_URL:-https://modelscope.cn/models/Qwen/Qwen3-4B-GGUF/resolve/master/Qwen3-4B-Q4_K_M.gguf}
+      LOCAL_LLM_MODEL_SHA256: ${LOCAL_LLM_MODEL_SHA256:-7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5}
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        set -eu
+        model=/models/Qwen3-4B-Q4_K_M.gguf
+        if [ -f "$${model}" ] && echo "$${LOCAL_LLM_MODEL_SHA256}  $${model}" | sha256sum -c -; then
+          exit 0
+        fi
+        rm -f "$${model}.part"
+        curl -L --fail --retry 5 --retry-delay 3 --connect-timeout 30 \
+          -o "$${model}.part" "$${LOCAL_LLM_MODEL_URL}"
+        echo "$${LOCAL_LLM_MODEL_SHA256}  $${model}.part" | sha256sum -c -
+        mv "$${model}.part" "$${model}"
+    volumes:
+      - ./.models/generation:/models
+
+  local-llm:
+    image: ${LOCAL_LLM_GPU_RUNTIME_IMAGE:-ghcr.nju.edu.cn/ggml-org/llama.cpp:server-cuda}
+    restart: always
+    environment:
+      NVIDIA_DISABLE_REQUIRE: "1"
+      LD_LIBRARY_PATH: /usr/lib/x86_64-linux-gnu:/usr/local/cuda/compat:/usr/local/cuda/lib64
+    command:
+      - -m
+      - /models/Qwen3-4B-Q4_K_M.gguf
+      - --alias
+      - qwen-local
+      - --ctx-size
+      - ${LOCAL_LLM_CONTEXT_SIZE:-8192}
+      - --threads
+      - ${LOCAL_LLM_THREADS:-10}
+      - --threads-batch
+      - ${LOCAL_LLM_THREADS:-10}
+      - --n-gpu-layers
+      - "999"
+      - --parallel
+      - "1"
+    ports:
+      - "11500:8080"
+    volumes:
+      - ./.models/generation:/models:ro
+    depends_on:
+      local-llm-model:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 60
+
+  analysis-worker:
+    build: ./analysis-worker
+    restart: always
+    expose:
+      - "8090"
+    ports:
+      - "8090:8090"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8090/health', timeout=2)"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  backend:
+    build: ./backend
+    restart: always
+    env_file:
+      - ./.env.local
+    environment:
+      SPRING_PROFILES_ACTIVE: mysql
+      MYSQL_URL: jdbc:mysql://mysql:3306/zhigang_map?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD:-CHANGE_ME}
+      # 本文件仅用于本地/比赛演示。对外完整部署必须通过环境变量设为 false。
+      QDRANT_ENDPOINT: http://qdrant:6333
+      QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+      QDRANT_COLLECTION: ${QDRANT_COLLECTION:-zhigang_authorized_evidence}
+      EMBEDDING_API_ENDPOINT: ${EMBEDDING_API_ENDPOINT:-http://bge-m3:8080/v1/embeddings}
+      EMBEDDING_API_KEY: ${EMBEDDING_API_KEY:-}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-bge-m3}
+      EMBEDDING_DIMENSION: ${EMBEDDING_DIMENSION:-1024}
+      EMBEDDING_CONNECT_TIMEOUT_MS: ${EMBEDDING_CONNECT_TIMEOUT_MS:-3000}
+      EMBEDDING_READ_TIMEOUT_MS: ${EMBEDDING_READ_TIMEOUT_MS:-60000}
+      CONCLUSION_MIN_COMPANIES: ${CONCLUSION_MIN_COMPANIES:-2}
+      CONCLUSION_MIN_SOURCES: ${CONCLUSION_MIN_SOURCES:-1}
+      EMERGING_WORKER_ENDPOINT: http://analysis-worker:8090
+      EMERGING_WORKER_CONNECT_TIMEOUT_MS: ${EMERGING_WORKER_CONNECT_TIMEOUT_MS:-3000}
+      EMERGING_WORKER_READ_TIMEOUT_MS: ${EMERGING_WORKER_READ_TIMEOUT_MS:-120000}
+      EMERGING_QDRANT_COLLECTION: ${EMERGING_QDRANT_COLLECTION:-zhigang_emerging_embeddings}
+      EMERGING_QUERY_QDRANT_COLLECTION: ${EMERGING_QUERY_QDRANT_COLLECTION:-zhigang_emerging_queries}
+      EMERGING_QUERY_CACHE_SIMILARITY: ${EMERGING_QUERY_CACHE_SIMILARITY:-0.93}
+      EMERGING_QUERY_EXISTING_ROLE_SIMILARITY: ${EMERGING_QUERY_EXISTING_ROLE_SIMILARITY:-0.88}
+      EMERGING_QUERY_MIN_EVIDENCE: ${EMERGING_QUERY_MIN_EVIDENCE:-3}
+      EMERGING_QUERY_MIN_SOURCES: ${EMERGING_QUERY_MIN_SOURCES:-2}
+      RESUME_OCR_ENDPOINT: http://analysis-worker:8090/v1/resume-ocr
+      RESUME_OCR_CONNECT_TIMEOUT_MS: ${RESUME_OCR_CONNECT_TIMEOUT_MS:-3000}
+      RESUME_OCR_READ_TIMEOUT_MS: ${RESUME_OCR_READ_TIMEOUT_MS:-120000}
+      SPARK_CONNECT_TIMEOUT_MS: ${SPARK_CONNECT_TIMEOUT_MS:-5000}
+      SPARK_READ_TIMEOUT_MS: ${SPARK_READ_TIMEOUT_MS:-90000}
+      LOCAL_LLM_API_ENDPOINT: ${LOCAL_LLM_API_ENDPOINT:-http://local-llm:8080/v1/chat/completions}
+      LOCAL_LLM_API_KEY: ${LOCAL_LLM_API_KEY:-}
+      LOCAL_LLM_MODEL: ${LOCAL_LLM_MODEL:-qwen-local}
+      LOCAL_LLM_MAX_TOKENS: ${LOCAL_LLM_MAX_TOKENS:-2048}
+      LOCAL_LLM_CONNECT_TIMEOUT_MS: ${LOCAL_LLM_CONNECT_TIMEOUT_MS:-3000}
+      LOCAL_LLM_READ_TIMEOUT_MS: ${LOCAL_LLM_READ_TIMEOUT_MS:-600000}
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      bge-m3:
+        condition: service_healthy
+      analysis-worker:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
+  qdrant_data:
+  bge_m3_model:

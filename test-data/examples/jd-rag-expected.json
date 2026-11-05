@@ -1,0 +1,6 @@
+{
+  "title": "RAG 应用开发工程师",
+  "requiredSkills": ["Python", "RAG", "Embedding", "向量数据库"],
+  "bonusSkills": ["LangChain", "模型评测"],
+  "mustHaveEvidenceAnchors": true
+}
